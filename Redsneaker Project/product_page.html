@@ -1,0 +1,1414 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BLACK-WHITE-GREY</title>
+    <link href="css/app.css" type="text/css" rel="stylesheet">
+    <link href="css/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="plugins/owl-carousel/assets/owl.carousel.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid p-0">
+    <div class="container px-0">
+        <header class="row text-right text-gray m-0">
+            <!--// Row1-->
+            <div class="container">
+                <ul class="list-inline w-100 border-bottom mt-1 mb-0" style="font-size: 12px; line-height: 25px">
+                    <li class="list-inline-item pl-2">
+                        <a href="/" data-toggle="modal" data-target="#login_form">Login</a> &nbsp;/&nbsp; <a href="#"
+                                                                                                             data-toggle="modal"
+                                                                                                             data-target="#join_form">Join</a>
+                    </li>
+                    <li class="list-inline-item pl-2">
+                        <a href="help-page.html">Help</a>
+                    </li>
+                    <li class="list-inline-item pl-2">
+                        <a href="cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item pl-2">
+                        <a href="">
+                            <i class="fa fa-globe"></i> <i class="fa fa-angle-down"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="menu w-100" style="height: 30px !important;">
+                <nav class="navbar navbar-expand-lg w-100 h-100">
+                    <a class="navbar-brand ml-4" href="trang-chu.html">
+                        <img src="images/logo.png" alt="" style="height: 27px;">
+                        <span class="logo-text">
+                            <span style="color: #eb142a;">RED</span><span style="color: black">SNEAKER.COM</span>
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 13px">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="trang-chu.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/brand-page.html" id="navbardrop" data-toggle="dropdown">
+                                    Brands
+                                </a>
+                                <div class="dropdown-menu child-menu">
+                                    <a class="dropdown-item" href="/brand-page.html?type_filter=adidas">adidas</a>
+                                    <a class="dropdown-item" href="/brand-page.html?type_filter=nike">nike</a>
+                                    <a class="dropdown-item" href="/brand-page.html?type_filter=converse">converse</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="brand-page.html">
+                                    new arrivals
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="brand-page.html">sales</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <button class="btn bg-white border-gray menu-search-button search-form" type="submit"
+                                    style="margin-right: -40px; z-index: 2; color: gray"><i class="fa fa-search"></i>
+                            </button>
+                            <input class="form-control mr-sm-2 search-form" type="search" placeholder="Search"
+                                   aria-label="Search" style="padding-left: 40px">
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <!--// slider news-->
+
+        </header>
+        <!-- Modal Login-->
+        <div class="modal fade" id="join_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content form-modal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logo" style="text-align: center">
+                            <img src="images/logo.png" style="height: 25px" alt="">
+                        </div>
+                        <br>
+                        <div class="slogan" style="text-align: center;">
+                            YOUR FOR EVERYTHING FORM
+                            <br>
+                            <span style="color: red">RED</span>SNEAKER
+                        </div>
+                        <button class="btn btn-primary btn-custom mt-4">
+                            <div class="pull-left"><i class="fa fa-facebook"></i></div>
+                            <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
+                        </button>
+                        <fieldset class="text-fieldset">
+                            <legend class="text-legend">OR</legend>
+                        </fieldset>
+                        <div class="form-section">
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom"
+                                           placeholder="Retype Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Date of Birth">
+                                </div>
+                                <div class="form-group">
+                                    <select name="" class="form-control form-custom" id="">
+                                        <option value="0" selected> - Country -</option>
+                                        <option value="1"> Việt Nam</option>
+                                        <option value="2"> Thái Lan</option>
+                                        <option value="3"> Nhật Bản</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        Sign up for emails to hear all latest from Redsneaker.</label>
+                                </div>
+                                <div class="form-group">
+                                        <span>By creating an account, you agree to Redsneaker's <a href="help-page.html"
+                                                                                                   class="link_custom_modal">Privacy Policy</a> and <a
+                                                href="help-page.html" class="link_custom_modal">Terms of Use</a></span>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-submit btn-custom">
+                                        CREATE ACCOUNT
+                                    </button>
+                                </div>
+                                <div class="form-group text-center">
+                                    Already a member? <a href="#" class="link_custom_modal">Sign in</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Login-->
+        <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content form-modal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logo" style="text-align: center">
+                            <img src="images/logo.png" style="height: 25px" alt="">
+                        </div>
+                        <br>
+                        <div class="slogan" style="text-align: center;">
+                            YOUR FOR EVERYTHING FORM
+                            <br>
+                            <span style="color: red">RED</span>SNEAKER
+                        </div>
+
+                        <div class="form-section">
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Password">
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <label class="custom-checkbox text-left" for="remember" >
+                                            <input type="checkbox" id="remember">
+                                            <span class="checkmark"></span>
+                                            Keep me logged in
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href=""> Forgotten your password?</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-submit btn-custom">
+                                        LOGIN
+                                    </button>
+                                </div>
+
+                                <button class="btn btn-primary btn-custom mt-1">
+                                    <div class="pull-left"><i class="fa fa-facebook"></i></div>
+                                    <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
+                                </button>
+                                <div class="form-group text-center mt-2 ">
+                                    Already a member? <a href="#" class="link_custom_modal">Sign in</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hot_news m-0">
+            <div class="news_content" id="news_content" style="position:relative; overflow: hidden">
+                <marquee class="font-weight-bold">
+                    <a href="#" class="mr-5 ml-5 text-dark">FAST SHIPPING and EASY RETURNS</a>
+                    <span>-</span>
+                    <a href="#" class="mr-5 ml-5 text-dark">Service Hotline +84 123456789</a>
+                    <span>-</span>
+                    <a href="#" class="mr-5 ml-5 text-dark text-uppercase">30 days return policy</a>
+                    <span>-</span>
+                    <a href="#" class="mr-5 ml-5 text-dark text-uppercase">resneaker offical store</a>
+                </marquee>
+            </div>
+        </div>
+        <!--// product page-->
+        <div class="container mt-4 container-product">
+            <div class="row">
+                <div class="col-md-7">
+                    <!-- #region Jssor Slider Begin -->
+
+                    <div id="product_slider_main"
+                         style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;overflow:hidden;visibility:hidden;">
+                        <!-- Loading Screen -->
+                        <div data-u="loading" class="jssorl-009-spin"
+                             style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
+                            <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;"
+                                 src="images/spin.svg"/>
+                        </div>
+                        <div data-u="slides"
+                             style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:700px;overflow:hidden;">
+                            <div>
+                                <img data-u="image" src="images/adidas/114324025/114324025_1.jpg"/>
+                                <img data-u="thumb" src="images/adidas/114324025/114324025_1.jpg"/>
+                            </div>
+                            <div>
+                                <img data-u="image" src="images/adidas/114324025/114324025_2.jpg"/>
+                                <img data-u="thumb" src="images/adidas/114324025/114324025_2.jpg"/>
+                            </div>
+                            <div>
+                                <img data-u="image" src="images/adidas/114324025/114324025_3.jpg"/>
+                                <img data-u="thumb" src="images/adidas/114324025/114324025_3.jpg"/>
+                            </div>
+                            <div>
+                                <img data-u="image" src="images/adidas/114324025/114324025_4.jpg"/>
+                                <img data-u="thumb" src="images/adidas/114324025/114324025_4.jpg"/>
+                            </div>
+                            <div>
+                                <img data-u="image" src="images/adidas/114324025/114324025_5.jpg"/>
+                                <img data-u="thumb" src="images/adidas/114324025/114324025_5.jpg"/>
+                            </div>
+                            <div>
+                                <img data-u="image" src="images/adidas/114324025/114324025_7.jpg"/>
+                                <img data-u="thumb" src="images/adidas/114324025/114324025_7.jpg"/>
+                            </div>
+
+                        </div>
+
+
+                        <!-- Arrow Navigator -->
+                        <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:162px;left:30px;"
+                             data-scale="0.75">
+                            <svg viewbox="0 0 16000 16000"
+                                 style="position:absolute;top: 120px;left:0;width:100%;height:100%;">
+                                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                                <polyline class="a" points="7930.4,5495.7 5426.1,8000 7930.4,10504.3 "></polyline>
+                                <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
+                            </svg>
+                        </div>
+                        <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:162px;right:30px;"
+                             data-scale="0.75">
+                            <svg viewbox="0 0 16000 16000"
+                                 style="position:absolute;top:120px;left:0;width:100%;height:100%;">
+                                <circle class="c" cx="8000" cy="8000" r="6260.9"></circle>
+                                <polyline class="a" points="8069.6,5495.7 10573.9,8000 8069.6,10504.3 "></polyline>
+                                <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
+                            </svg>
+                        </div>
+                        <!--Thumbnail Navigator-->
+                        <div data-u="thumbnavigator" class=""
+                             style="position:absolute;left:0px; bottom:0; width:980px;height:100px;background-color:#000;"
+                             data-autocenter="1" data-scale-bottom="0.7">
+                            <div data-u="slides">
+                                <div data-u="prototype" class="p" style="width:190px;height:90px;">
+                                    <div data-u="thumbnailtemplate" class="t"></div>
+                                    <svg viewbox="0 0 16000 16000" class="cv">
+                                        <circle class="a" cx="8000" cy="8000" r="3238.1"></circle>
+                                        <line class="a" x1="6190.5" y1="8000" x2="9809.5" y2="8000"></line>
+                                        <line class="a" x1="8000" y1="9809.5" x2="8000" y2="6190.5"></line>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- #endregion Jssor Slider End --></div>
+                <div class="col-md-5">
+                    <h3 class="product_name">
+                        NIKE W AIR MAX 98
+                    </h3>
+                    <i class="product_number"> Item number: #114324001</i>
+                    <h3 class="product_price">139.99 $</h3>
+                    <div class="product_detail_title">
+                        PRODUCT DETAILS
+                    </div>
+                    <hr class="product_detail_bar">
+                    <ul class="list-group">
+                        <li class="list-inline-item">
+                            <span class="item_title">Brand:</span>
+                            Nike
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="item_title">Materials:</span>
+                            91.0% Leather, 7.0% Synthetic, 2.0% Textile
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="item_title">Color:</span>
+                            BLACK-WHITE-GREY
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="item_title">Manufacturer ID:</span>
+                            485724-003
+                        </li>
+                        <li class="list-inline-item">
+                            <span class="item_title">Style:</span>
+                            Class, Retro, Low-Top, Running
+                        </li>
+                        <li class="list-inline-item">
+                            In the game of basketball Michael Jordan is a god . Number 23 of the Chicago Bulls has set
+                            the bar extremely high. His six championship rings, five mvp's numerous scoring title, not
+                            to mention his ... [<a
+                                href="#">more</a>]
+                        </li>
+                    </ul>
+                    <div class="product_detail_title">
+                        CHOOSE A SIZE
+                    </div>
+                    <hr class="product_detail_bar">
+
+
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item product_tab_size">
+                            <a class="nav-link active" href="#eur" role="tab" data-toggle="tab">EUR</a>
+                        </li>
+                        <li class="nav-item product_tab_size">
+                            <a class="nav-link" href="#us" role="tab" data-toggle="tab">US</a>
+                        </li>
+                        <li class="nav-item product_tab_size">
+                            <a class="nav-link" href="#uk" role="tab" data-toggle="tab">UK</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="eur" class="tab-pane fade in active show ">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">36</li>
+                                <li class="list-inline-item">36.5</li>
+                                <li class="list-inline-item">37.5</li>
+                                <li class="list-inline-item">38</li>
+                                <li class="list-inline-item">38.5</li>
+                                <li class="list-inline-item size-active">39</li>
+                                <li class="list-inline-item">40</li>
+                                <li class="list-inline-item">40.5</li>
+                            </ul>
+                        </div>
+                        <div id="us" class="tab-pane fade">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">36</li>
+                                <li class="list-inline-item">36.5</li>
+                                <li class="list-inline-item">37.5</li>
+                                <li class="list-inline-item">38</li>
+                                <li class="list-inline-item">38.5</li>
+                                <li class="list-inline-item">39</li>
+                                <li class="list-inline-item">40</li>
+                                <li class="list-inline-item">40.5</li>
+                            </ul>
+                        </div>
+                        <div id="uk" class="tab-pane fade">
+                            <ul class="list-inline">
+                                <li class="list-inline-item">36</li>
+                                <li class="list-inline-item">36.5</li>
+                                <li class="list-inline-item">37.5</li>
+                                <li class="list-inline-item">38</li>
+                                <li class="list-inline-item">38.5</li>
+                                <li class="list-inline-item">39</li>
+                                <li class="list-inline-item">40</li>
+                                <li class="list-inline-item">40.5</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="product_detail_title">
+                        CHOOSE A COLOR
+                    </div>
+                    <hr class="product_detail_bar">
+
+                    <div class="product_color filter">
+                        <ul class="list-inline">
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <div class="ft-color ft-cl-black ft-cl-active" href="#"></div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <div class="ft-color ft-cl-white" href="#"></div>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#">
+                                    <div class="ft-color ft-cl-gray" href="#"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product_decription">
+                        - FAST SHIPPING and EASY RETURNS (4-5Days) <br>
+                        - 30 Days return policy <br>
+                        - Orders from outside the EU get 20% VAT reduction <br>
+                        - Redsneaker members enjoy free returns join here <br>
+                        - Order are processed and delivered Monday - Friday (excluding public holidays) <br>
+                        - Service Hotline: +84 123456789 <br>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a class="btn btn-add-to-wishlist" href="cart.html"><i class="fa fa-heart"></i> ADD TO WISH LIST</a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="btn btn-add-to-cart" href="cart.html">ADD TO CART</a>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <ul class="list-inline pull-right">
+                                <li class="list-inline-item social-share-button"><i class="fa fa-facebook-f"></i></li>
+                                <li class="list-inline-item social-share-button"><i class="fa fa-twitter"></i></li>
+                                <li class="list-inline-item social-share-button"><i class="fa fa-instagram"></i></li>
+                                <li class="list-inline-item social-share-button"><i class="fa fa-google-plus"></i></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container review-section">
+                <div class="w-100">
+                    <span class="review-title">REVIEWS
+                <span class="total_review">(4)</span>
+                <div class="review-stars list-inline-item">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                    </ul>
+                </div>
+                </span>
+                    <a class="pull-right text-gray" href="#">Write you review</a>
+                </div>
+                <hr>
+
+                <div class="comments container">
+                    <div class="block-comment">
+                        <div class="comment-title">
+                            Jackie Chan!
+                        </div>
+                        <div class="review-stars list-inline-item">
+                            <ul class="list-inline list-inline-item">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                            <span class="list-inline-item">John - June 12, 2018</span>
+                        </div>
+                        <div class="comment-content">
+                            I really love this shoe, very comfortable. It is the most comfortable basketball I've ever
+                            worn
+                        </div>
+                    </div>
+                    <div class="block-comment">
+                        <div class="comment-title">
+                            Taylor Swift!
+                        </div>
+                        <div class="review-stars list-inline-item">
+                            <ul class="list-inline list-inline-item">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                            <span class="list-inline-item">John - June 12, 2018</span>
+                        </div>
+                        <div class="comment-content">
+                            It is the most comfortable basketball I've ever
+                            worn
+                        </div>
+                    </div>
+                    <div class="block-comment">
+                        <div class="comment-title">
+                            Tom Cruise!
+                        </div>
+                        <div class="review-stars list-inline-item">
+                            <ul class="list-inline list-inline-item">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span class="list-inline-item">John - June 12, 2018</span>
+                        </div>
+                        <div class="comment-content">
+                            I really love this shoe, very comfortable.
+                        </div>
+                    </div>
+                    <div class="block-comment">
+                        <div class="comment-title">
+                            Alibaba!
+                        </div>
+                        <div class="review-stars list-inline-item">
+                            <ul class="list-inline list-inline-item">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                            </ul>
+                            <span class="list-inline-item">John - June 12, 2018</span>
+                        </div>
+                        <div class="comment-content">
+                            I really love this shoe, very comfortable. It is the most comfortable basketball I've ever
+                            worn
+                        </div>
+                    </div>
+                    <div class="block-comment">
+                        <div class="comment-title">
+                            Snow White!
+                        </div>
+                        <div class="review-stars list-inline-item">
+                            <ul class="list-inline list-inline-item">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span class="list-inline-item">John - June 12, 2018</span>
+                        </div>
+                        <div class="comment-content">
+                            It is the most comfortable basketball I've ever
+                            worn
+                        </div>
+                    </div>
+                    <div class="block-comment">
+                        <div class="comment-title">
+                            Lee Min Ho!
+                        </div>
+                        <div class="review-stars list-inline-item">
+                            <ul class="list-inline list-inline-item">
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                                <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                            </ul>
+                            <span class="list-inline-item">John - June 12, 2018</span>
+                        </div>
+                        <div class="comment-content">
+                            I really love this shoe, very comfortable. It is the most comfortable basketball I've ever
+                            worn
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container relate-section mt-5">
+                <div class="w-100">
+                    <span class="review-title">YOU MIGHT ALSO LIKE</span>
+                </div>
+                <hr class="underline">
+                <div class="slider-sneaker">
+                    <div id="carouselExample" class="carousel slide slide-product" data-ride="carousel" data-interval="9000">
+                        <div class="carousel-inner row w-100 m-0" role="listbox">
+                            <div class="carousel-item  active p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-1.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-2.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-3.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-4.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-5.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-3.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                            <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                            <!--<span class="sr-only">Previous</span>-->
+                        </a>
+                        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                            <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                            <!--<span class="sr-only">Next</span>-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class=" relate-section mt-5 mb-5">
+                <div class="w-100">
+                    <span class="review-title">RECENTLY</span>
+                </div>
+                <hr class="underline">
+                <div class="slider-sneaker">
+                    <div id="carouselExample2" class="carousel slide slide-product" data-ride="carousel" data-interval="9000">
+                        <div class="carousel-inner row w-100 m-0" role="listbox">
+                            <div class="carousel-item  active p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-1.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-2.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-3.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-4.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-5.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="carousel-item p-2">
+                                <div class="panel panel-default">
+                                    <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
+                                        <div title="image 1" class="thumb">
+                                            <img class="img-fluid mx-auto d-block" src="images/product-3.jpg" alt="slide 1">
+                                            <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                            <div class="thumb-content text-uppercase p-2">
+                                                <div class="tc-title">
+                                                    nike
+                                                </div>
+                                                <div class="tc-des">
+                                                    nike air vapormax flykinit moc 2
+                                                </div>
+                                                <div class="tc-price">
+                                        <span class="old-price mr-3">
+                                            199$
+                                        </span>
+                                                    <span class="new-price">
+                                            120$
+                                        </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                            <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
+                            <!--<span class="sr-only">Previous</span>-->
+                        </a>
+                        <a class="carousel-control-next text-faded" href="#carouselExample2" role="button" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                            <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
+                            <!--<span class="sr-only">Next</span>-->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="row text-white pt-5 pb-5 m-0 pl-2">
+        <div class="col-2"></div>
+        <div class="col-2">
+            <div class="footer-label text-uppercase">
+                get help
+            </div>
+            <div class="footer-list">
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        Customer infomation
+                    </a>
+                </div>
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        Order status/ Returns
+                    </a>
+                </div>
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        Feedback
+                    </a>
+                </div>
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        FAQs
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="footer-label text-uppercase">
+                contact
+            </div>
+            <div class="footer-list">
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        Email: info@redsneaker.com
+                    </a>
+                </div>
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        Hot-line: +84 123456789
+                    </a>
+                </div>
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        General terms and conditions
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="footer-label text-uppercase">
+                payment method
+            </div>
+            <div class="footer-list">
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        Visa
+                    </a>
+                </div>
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        Master card
+                    </a>
+                </div>
+                <div class="footer-list-item mt-3">
+                    <a href="#" class="text-white">
+                        Paypal
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="footer-label text-uppercase">
+                social media
+            </div>
+            <div class="footer-list">
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-facebook-f social-item m-auto" href="https://facebook.com"></a>
+                </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-twitter social-item m-auto" href="#"></a>
+                </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-instagram social-item m-auto" href="#"></a>
+                </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-google-plus social-item m-auto" href="#"></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-12 row bottom-footer mt-5">
+            <div class="col-2"></div>
+            <div class="col-4  pt-3">
+                <span class="text-uppercase">
+                    resneaker @ 2018
+                </span>
+            </div>
+            <div class="col-6 pl-0">
+                <img src="images/logo-white.png" class="logo-footer">
+            </div>
+        </div>
+    </footer>
+</div>
+</body>
+<!--<script src="../js/bootstrap.js"></script>-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jssor.slider-27.4.0.min.js" type="text/javascript"></script>
+<script src="plugins/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+
+<script>
+    $(document).ready(function () {
+        var count_slider = $('#carouselExample .carousel-indicators li').length;
+        $('#carouselExample .carousel-indicators li').attr('style', 'width:' + 100 / count_slider + '%');
+
+        $('#carouselExample').on('slide.bs.carousel', function (e) {
+
+
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 5;
+            var totalItems = $('#carouselExample .slide-product .carousel-item').length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('#carouselExample .slide-product .carousel-item').eq(i).appendTo('.slide-product .carousel-inner');
+                    }
+                    else {
+                        $('#carouselExample .slide-product .carousel-item').eq(0).appendTo('.slide-product .carousel-inner');
+                    }
+                }
+            }
+        });
+
+
+        $('#carouselExample').carousel({
+            interval: 3000
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        var count_slider = $('#carouselExample2 .carousel-indicators li').length;
+        $('#carouselExample2 .carousel-indicators li').attr('style', 'width:' + 100 / count_slider + '%');
+
+        $('#carouselExample2').on('slide.bs.carousel', function (e) {
+
+
+            var $e = $(e.relatedTarget);
+            var idx = $e.index();
+            var itemsPerSlide = 5;
+            var totalItems = $('#carouselExample2 .slide-product .carousel-item').length;
+
+            if (idx >= totalItems - (itemsPerSlide - 1)) {
+                var it = itemsPerSlide - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    // append slides to end
+                    if (e.direction == "left") {
+                        $('#carouselExample2 .slide-product .carousel-item').eq(i).appendTo('.slide-product .carousel-inner');
+                    }
+                    else {
+                        $('#carouselExample2 .slide-product .carousel-item').eq(0).appendTo('.slide-product .carousel-inner');
+                    }
+                }
+            }
+        });
+
+
+        $('#carouselExample2').carousel({
+            interval: 3000
+        });
+    });
+</script>
+<script type="text/javascript">
+    jQuery(document).ready(function ($) {
+        var animation = [
+            {
+                $Duration: 800,
+                x: 0.3,
+                $During: {$Left: [0.3, 0.7]},
+                $Easing: {$Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                x: -0.3,
+                $SlideOut: true,
+                $Easing: {$Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                x: -0.3,
+                $During: {$Left: [0.3, 0.7]},
+                $Easing: {$Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                x: 0.3,
+                $SlideOut: true,
+                $Easing: {$Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                y: 0.3,
+                $During: {$Top: [0.3, 0.7]},
+                $Easing: {$Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                y: -0.3,
+                $SlideOut: true,
+                $Easing: {$Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                y: -0.3,
+                $During: {$Top: [0.3, 0.7]},
+                $Easing: {$Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                y: 0.3,
+                $SlideOut: true,
+                $Easing: {$Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                x: 0.3,
+                $Cols: 2,
+                $During: {$Left: [0.3, 0.7]},
+                $ChessMode: {$Column: 3},
+                $Easing: {$Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                x: 0.3,
+                $Cols: 2,
+                $SlideOut: true,
+                $ChessMode: {$Column: 3},
+                $Easing: {$Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                y: 0.3,
+                $Rows: 2,
+                $During: {$Top: [0.3, 0.7]},
+                $ChessMode: {$Row: 12},
+                $Easing: {$Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                y: 0.3,
+                $Rows: 2,
+                $SlideOut: true,
+                $ChessMode: {$Row: 12},
+                $Easing: {$Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                y: 0.3,
+                $Cols: 2,
+                $During: {$Top: [0.3, 0.7]},
+                $ChessMode: {$Column: 12},
+                $Easing: {$Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                y: -0.3,
+                $Cols: 2,
+                $SlideOut: true,
+                $ChessMode: {$Column: 12},
+                $Easing: {$Top: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                x: 0.3,
+                $Rows: 2,
+                $During: {$Left: [0.3, 0.7]},
+                $ChessMode: {$Row: 3},
+                $Easing: {$Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                x: -0.3,
+                $Rows: 2,
+                $SlideOut: true,
+                $ChessMode: {$Row: 3},
+                $Easing: {$Left: $Jease$.$InCubic, $Opacity: $Jease$.$Linear},
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                x: 0.3,
+                y: 0.3,
+                $Cols: 2,
+                $Rows: 2,
+                $During: {$Left: [0.3, 0.7], $Top: [0.3, 0.7]},
+                $ChessMode: {$Column: 3, $Row: 12},
+                $Easing: {
+                    $Left: $Jease$.$InCubic,
+                    $Top: $Jease$.$InCubic,
+                    $Opacity: $Jease$.$Linear
+                },
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                x: 0.3,
+                y: 0.3,
+                $Cols: 2,
+                $Rows: 2,
+                $During: {$Left: [0.3, 0.7], $Top: [0.3, 0.7]},
+                $SlideOut: true,
+                $ChessMode: {$Column: 3, $Row: 12},
+                $Easing: {
+                    $Left: $Jease$.$InCubic,
+                    $Top: $Jease$.$InCubic,
+                    $Opacity: $Jease$.$Linear
+                },
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                $Delay: 20,
+                $Clip: 3,
+                $Assembly: 260,
+                $Easing: {
+                    $Clip: $Jease$.$InCubic,
+                    $Opacity: $Jease$.$Linear
+                },
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                $Delay: 20,
+                $Clip: 3,
+                $SlideOut: true,
+                $Assembly: 260,
+                $Easing: {
+                    $Clip: $Jease$.$OutCubic,
+                    $Opacity: $Jease$.$Linear
+                },
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                $Delay: 20,
+                $Clip: 12,
+                $Assembly: 260,
+                $Easing: {
+                    $Clip: $Jease$.$InCubic,
+                    $Opacity: $Jease$.$Linear
+                },
+                $Opacity: 2
+            },
+            {
+                $Duration: 800,
+                $Delay: 20,
+                $Clip: 12,
+                $SlideOut: true,
+                $Assembly: 260,
+                $Easing: {
+                    $Clip: $Jease$.$OutCubic,
+                    $Opacity: $Jease$.$Linear
+                },
+                $Opacity: 2
+            }
+        ];
+
+        var product_slider_option = {
+            $AutoPlay: 1,
+            $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: animation,
+                $TransitionsOrder: 1
+            },
+            $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+            },
+            $ThumbnailNavigatorOptions: {
+                $Class: $JssorThumbnailNavigator$,
+                $SpacingX: 5,
+                $SpacingY: 5
+            }
+        };
+
+        var product_slider = new $JssorSlider$('product_slider_main', product_slider_option);
+
+        /*#region responsive code begin*/
+
+        var MAX_WIDTH = 716.55;
+
+        function ScaleSlider() {
+            var containerElement = product_slider.$Elmt.parentNode;
+            var containerWidth = containerElement.clientWidth;
+
+            if (containerWidth) {
+
+                var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                product_slider.$ScaleWidth(expectedWidth);
+            }
+            else {
+                window.setTimeout(ScaleSlider, 30);
+            }
+        }
+
+        ScaleSlider();
+
+        $(window).bind("load", ScaleSlider);
+        $(window).bind("resize", ScaleSlider);
+        $(window).bind("orientationchange", ScaleSlider);
+        /*#endregion responsive code end*/
+    });
+</script>
+
+</html>

@@ -1,0 +1,735 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thanh toán</title>
+    <link href="css/app.css" type="text/css" rel="stylesheet">
+    <link href="css/fontawesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+    <link href="plugins/owl-carousel/assets/owl.carousel.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid p-0">
+    <div class="container px-0">
+        <header class="row text-right text-gray m-0">
+            <!--// Row1-->
+            <div class="container">
+                <ul class="list-inline w-100 border-bottom mt-1 mb-0" style="font-size: 12px; line-height: 25px">
+                    <li class="list-inline-item pl-2">
+                        <a href="/" data-toggle="modal" data-target="#login_form">Login</a> &nbsp;/&nbsp; <a href="help-page.html"
+                                                                                                             data-toggle="modal"
+                                                                                                             data-target="#join_form">Join</a>
+                    </li>
+                    <li class="list-inline-item pl-2">
+                        <a href="help-page.html">Help</a>
+                    </li>
+                    <li class="list-inline-item pl-2">
+                        <a href="cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item pl-2">
+                        <a href="">
+                            <i class="fa fa-globe"></i> <i class="fa fa-angle-down"></i>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="menu w-100" style="height: 30px !important;">
+                <nav class="navbar navbar-expand-lg w-100 h-100">
+                    <a class="navbar-brand ml-4" href="trang-chu.html">
+                        <img src="images/logo.png" alt="" style="height: 27px;">
+                        <span class="logo-text">
+                            <span style="color: #eb142a;">RED</span><span style="color: black">SNEAKER.COM</span>
+                        </span>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 13px">
+                        <ul class="navbar-nav m-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="trang-chu.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/brand-page.html" id="navbardrop"
+                                   data-toggle="dropdown">
+                                    Brands
+                                </a>
+                                <div class="dropdown-menu child-menu">
+                                    <a class="dropdown-item" href="/brand-page.html?type_filter=adidas">adidas</a>
+                                    <a class="dropdown-item" href="/brand-page.html?type_filter=nike">nike</a>
+                                    <a class="dropdown-item" href="/brand-page.html?type_filter=converse">converse</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="brand-page.html">
+                                    new arrivals
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="brand-page.html">sales</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0">
+                            <button class="btn bg-white border-gray menu-search-button search-form" type="submit"
+                                    style="margin-right: -40px; z-index: 2; color: gray"><i class="fa fa-search"></i>
+                            </button>
+                            <input class="form-control mr-sm-2 search-form" type="search" placeholder="Search"
+                                   aria-label="Search" style="padding-left: 40px">
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <!--// slider news-->
+
+        </header>
+        <!-- Modal Login-->
+        <div class="modal fade" id="join_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content form-modal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logo" style="text-align: center">
+                            <img src="images/logo.png" style="height: 25px" alt="">
+                        </div>
+                        <br>
+                        <div class="slogan" style="text-align: center;">
+                            YOUR FOR EVERYTHING FORM
+                            <br>
+                            <span style="color: red">RED</span>SNEAKER
+                        </div>
+                        <button class="btn btn-primary btn-custom mt-4">
+                            <div class="pull-left"><i class="fa fa-facebook"></i></div>
+                            <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
+                        </button>
+                        <fieldset class="text-fieldset">
+                            <legend class="text-legend">OR</legend>
+                        </fieldset>
+                        <div class="form-section">
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom"
+                                           placeholder="Retype Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Date of Birth">
+                                </div>
+                                <div class="form-group">
+                                    <select name="" class="form-control form-custom" id="">
+                                        <option value="0" selected> - Country -</option>
+                                        <option value="1"> Việt Nam</option>
+                                        <option value="2"> Thái Lan</option>
+                                        <option value="3"> Nhật Bản</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label class="custom-checkbox">
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                        Sign up for emails to hear all latest from Redsneaker.</label>
+                                </div>
+                                <div class="form-group">
+                                        <span>By creating an account, you agree to Redsneaker's <a href="help-page.html"
+                                                                                                   class="link_custom_modal">Privacy Policy</a> and <a
+                                                href="help-page.html" class="link_custom_modal">Terms of Use</a></span>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-submit btn-custom">
+                                        CREATE ACCOUNT
+                                    </button>
+                                </div>
+                                <div class="form-group text-center">
+                                    Already a member? <a href="#" class="link_custom_modal">Sign in</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Login-->
+        <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content form-modal">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="logo" style="text-align: center">
+                            <img src="images/logo.png" style="height: 25px" alt="">
+                        </div>
+                        <br>
+                        <div class="slogan" style="text-align: center;">
+                            YOUR FOR EVERYTHING FORM
+                            <br>
+                            <span style="color: red">RED</span>SNEAKER
+                        </div>
+
+                        <div class="form-section">
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control form-custom" placeholder="Password">
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-md-6">
+                                        <label class="custom-checkbox text-left" for="remember">
+                                            <input type="checkbox" id="remember">
+                                            <span class="checkmark"></span>
+                                            Keep me logged in
+                                        </label>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href=""> Forgotten your password?</a>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-submit btn-custom">
+                                        LOGIN
+                                    </button>
+                                </div>
+
+                                <button class="btn btn-primary btn-custom mt-1">
+                                    <div class="pull-left"><i class="fa fa-facebook"></i></div>
+                                    <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
+                                </button>
+                                <div class="form-group text-center mt-2 ">
+                                    Already a member? <a href="#" class="link_custom_modal">Sign in</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row hot_news m-0">
+            <div class="news_content" id="news_content" style="position:relative; overflow: hidden">
+                <marquee class="font-weight-bold">
+                    <a href="#" class="mr-5 ml-5 text-dark">FAST SHIPPING and EASY RETURNS</a>
+                    <span>-</span>
+                    <a href="#" class="mr-5 ml-5 text-dark">Service Hotline +84 123456789</a>
+                    <span>-</span>
+                    <a href="#" class="mr-5 ml-5 text-dark text-uppercase">30 days return policy</a>
+                    <span>-</span>
+                    <a href="#" class="mr-5 ml-5 text-dark text-uppercase">resneaker offical store</a>
+                </marquee>
+            </div>
+        </div>
+
+
+        <!--// product page-->
+        <div class="container mt-4 container-payment">
+            <div class="row">
+                <div class="col-md-8">
+                    <div id="accordion">
+                        <div class="card payment-active">
+                            <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#shipping"
+                                 aria-expanded="true" aria-controls="collapseOne">
+                                <h5 class="mb-0 payment-section-title">
+                                    1. SHIPPING
+                                </h5>
+                            </div>
+
+                            <div id="shipping" class="collapse show" aria-labelledby="headingOne"
+                                 data-parent="#accordion">
+                                <div class="card-body pb-3">
+                                    <form action="#" class="pb-3">
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Name:</label>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <input type="text" class="form-control" placeholder="First name *">
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <input type="text" class="form-control" placeholder="Last name *">
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control" placeholder="Company">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Address:</label>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <select type="text" class="form-control" placeholder="Company">
+                                                    <option value="">Country *</option>
+                                                    <option value="vn">Việt Nam</option>
+                                                    <option value="jp">Nhật Bản</option>
+                                                    <option value="id">Indonesia</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-7 mt-3">
+                                                <input type="text" class="form-control" placeholder="Street *">
+                                            </div>
+                                            <div class="col-md-5 mt-3">
+                                                <input type="text" class="form-control" placeholder="House Number *">
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Additional Address Info">
+                                            </div>
+                                            <div class="col-md-7 mt-3">
+                                                <input type="text" class="form-control" placeholder="City *">
+                                            </div>
+                                            <div class="col-md-5 mt-3">
+                                                <input type="text" class="form-control" placeholder="ZIP code *">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">E-Mail:</label>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control" placeholder="Email Address *">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Shipping Phone:</label>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="form-group text-right">
+                                            <button class="btn btn-danger btn-custom-payment">Countinue to billing
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingTwo" data-toggle="collapse" data-target="#billing"
+                                 aria-expanded="false" aria-controls="collapseTwo">
+                                <h5 class="mb-0 payment-section-title">
+                                    2. BILLING
+                                </h5>
+                            </div>
+                            <div id="billing" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body pb-3">
+                                    <form action="#" class="pb-3">
+                                        <div class="form-group ">
+                                            <label class="custom-checkbox payment-section-title">
+                                                <input type="checkbox">
+                                                <span class="checkmark"></span>
+                                                My billing address is the same as my shipping address</label>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Name:</label>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <input type="text" class="form-control" placeholder="First name *">
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <input type="text" class="form-control" placeholder="Last name *">
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control" placeholder="Company">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Address:</label>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <select type="text" class="form-control" placeholder="Company">
+                                                    <option value="">Country *</option>
+                                                    <option value="vn">Việt Nam</option>
+                                                    <option value="jp">Nhật Bản</option>
+                                                    <option value="id">Indonesia</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-7 mt-3">
+                                                <input type="text" class="form-control" placeholder="Street *">
+                                            </div>
+                                            <div class="col-md-5 mt-3">
+                                                <input type="text" class="form-control" placeholder="House Number *">
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control"
+                                                       placeholder="Additional Address Info">
+                                            </div>
+                                            <div class="col-md-7 mt-3">
+                                                <input type="text" class="form-control" placeholder="City *">
+                                            </div>
+                                            <div class="col-md-5 mt-3">
+                                                <input type="text" class="form-control" placeholder="ZIP code *">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">E-Mail:</label>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control" placeholder="Email Address *">
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Shipping Phone:</label>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="form-group text-right">
+                                            <button class="btn btn-danger btn-custom-payment">Countinue to payment
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree" data-toggle="collapse" data-target="#payment"
+                                 aria-expanded="false" aria-controls="collapseThree">
+                                <h5 class="mb-0 payment-section-title">
+                                    3. PAYMENT
+                                </h5>
+                            </div>
+                            <div id="payment" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div class="card-body pb-3">
+                                    <form action="#" class="pb-3">
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Promo Code:</label>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <label for="">0/16</label>
+                                            </div>
+
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Credit Card Information:</label>
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control" placeholder="Name on Card *">
+                                            </div>
+                                            <div class="col-md-12 mt-3">
+                                                <input type="text" class="form-control" placeholder="Card Number *">
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <ul class="list-inline mt-2 pull-right" style="opacity: 0.6">
+                                                    <li class="list-inline-item">
+                                                        <img src="images/visa.png" class="logo-payment" alt="">
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <img src="images/mastercard.png" class="logo-payment" alt="">
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <img src="images/maestro.png" class="logo-payment" alt="">
+                                                    </li>
+                                                    <li class="list-inline-item">
+                                                        <img src="images/paypal.png" class="logo-payment" alt="">
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Expiration Date:</label>
+                                            </div>
+
+                                            <div class="col-md-6 mt-3">
+                                                <input type="text" class="form-control" placeholder="Month*">
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <span class="list-inline-item"> / </span>
+                                                <span class="list-inline-item" style="width: 87.9%">
+                                                    <input type="text" class="form-control list-inline-item"
+                                                           placeholder="Year*">
+                                                </span>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="form-group row">
+                                            <div class="col-md-12">
+                                                <label class="payment-label">Security Code:</label>
+                                            </div>
+                                            <div class="col-md-6 mt-3">
+                                                <input type="text" class="form-control" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="form-group text-right">
+                                            <button class="btn btn-danger btn-custom-payment">Place Order
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 bill mt-3">
+                    <div class="bill-item">
+                        <div class="p-0 pb-2 mb-3 mx-auto bill-title text-uppercase">
+                            summary
+                        </div>
+                        <div class="bi-content">
+                            <div class="row m-0 pb-3 bi-content-item">
+                                <div class="col-9 bi-content-item-title font-bold text-uppercase">
+                                    subtotal
+                                </div>
+                                <div class="col-3 bi-content-item-price sub_total font-bold text-right">
+                                    659$
+                                </div>
+                            </div>
+                            <div class="row m-0 pb-3 bi-content-item">
+                                <div class="col-9 bi-content-item-title">
+                                    <div class="text-uppercase font-bold">estimated delivery and handing</div>
+                                    <div>Your order qualifies for free shipping</div>
+                                </div>
+                                <div class="col-3 bi-content-item-price font-bold text-right">
+                                    0$
+                                </div>
+                            </div>
+                            <div class="row m-0 pb-3 bi-content-item">
+                                <div class="col-9 bi-content-item-title text-uppercase">
+                                    <span class="font-bold">vat</span>(5%)
+                                </div>
+                                <div class="col-3 bi-content-item-price font-bold text-right vat">
+                                    33$
+                                </div>
+                            </div>
+                            <div class="row m-0 pb-3 bi-content-item">
+                                <div class="col-9 bi-content-item-title font-bold text-uppercase font-size-subject">
+                                    total
+                                </div>
+                                <div class="col-3 bi-content-item-price font-bold text-right font-size-subject total">
+                                    689$
+                                </div>
+                            </div>
+                            <div class="col-11 mx-auto bi-title text-uppercase">
+                                <!--summary-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bill-item mt-4">
+                        <div class="p-0 pb-2  mb-3 mx-auto bill-title text-uppercase">
+                            In your cart (3)
+                        </div>
+                        <div class="bill-content">
+                            <div class="cart-item container">
+                               <div class="row">
+                                   <div class="col-md-4">
+                                       <img src="images/adidas_1.jpg" class="cart-item-image" alt="">
+                                   </div>
+                                   <div class="col-md-8">
+                                       <div class="cart-item-title">
+                                           New Banlance MRL247 D
+                                       </div>
+                                       <div class="cart-item-number"> Item number: #114324534</div>
+                                       <div class="cart-item-size">Size: Ur 40</div>
+                                       <div class="cart-item-color">Color: Gray-White</div>
+                                       <div class="cart-item-price">
+                                           219.99 $
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="cart-item container">
+                               <div class="row">
+                                   <div class="col-md-4">
+                                       <img src="images/adidas_1.jpg" class="cart-item-image" alt="">
+                                   </div>
+                                   <div class="col-md-8">
+                                       <div class="cart-item-title">
+                                           New Banlance MRL247 D
+                                       </div>
+                                       <div class="cart-item-number"> Item number: #114324534</div>
+                                       <div class="cart-item-size">Size: Ur 40</div>
+                                       <div class="cart-item-color">Color: Gray-White</div>
+                                       <div class="cart-item-price">
+                                           219.99 $
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="cart-item container">
+                               <div class="row">
+                                   <div class="col-md-4">
+                                       <img src="images/adidas_1.jpg" class="cart-item-image" alt="">
+                                   </div>
+                                   <div class="col-md-8">
+                                       <div class="cart-item-title">
+                                           New Banlance MRL247 D
+                                       </div>
+                                       <div class="cart-item-number"> Item number: #114324534</div>
+                                       <div class="cart-item-size">Size: Ur 40</div>
+                                       <div class="cart-item-color">Color: Gray-White</div>
+                                       <div class="cart-item-price">
+                                           219.99 $
+                                       </div>
+                                   </div>
+                               </div>
+                            </div>
+                            <div class="cart-item container">
+                               <div class="row">
+                                   <div class="col-md-12">
+                                       <a href="cart.html">Edit Cart</a>
+                                   </div>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<footer class="row text-white pt-5 pb-5 m-0 pl-2">
+    <div class="col-2"></div>
+    <div class="col-2">
+        <div class="footer-label text-uppercase">
+            get help
+        </div>
+        <div class="footer-list">
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    Customer infomation
+                </a>
+            </div>
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    Order status/ Returns
+                </a>
+            </div>
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    Feedback
+                </a>
+            </div>
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    FAQs
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="footer-label text-uppercase">
+            contact
+        </div>
+        <div class="footer-list">
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    Email: info@redsneaker.com
+                </a>
+            </div>
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    Hot-line: +84 123456789
+                </a>
+            </div>
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    General terms and conditions
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="footer-label text-uppercase">
+            payment method
+        </div>
+        <div class="footer-list">
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    Visa
+                </a>
+            </div>
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    Master card
+                </a>
+            </div>
+            <div class="footer-list-item mt-3">
+                <a href="#" class="text-white">
+                    Paypal
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2">
+        <div class="footer-label text-uppercase">
+            social media
+        </div>
+        <div class="footer-list">
+            <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                <a class="fa fa-facebook-f social-item m-auto" href="https://facebook.com"></a>
+            </div>
+            <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                <a class="fa fa-twitter social-item m-auto" href="https://twitter.com"></a>
+            </div>
+            <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                <a class="fa fa-instagram social-item m-auto" href="https://instargram.com"></a>
+            </div>
+            <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                <a class="fa fa-google-plus social-item m-auto" href="https://plus.google.com"></a>
+            </div>
+        </div>
+    </div>
+    <div class="col-2"></div>
+    <div class="col-12 row bottom-footer mt-5">
+        <div class="col-2"></div>
+        <div class="col-4  pt-3">
+                <span class="text-uppercase">
+                    resneaker @ 2018
+                </span>
+        </div>
+        <div class="col-6 pl-0">
+            <img src="images/logo-white.png" class="logo-footer">
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+<!--<script src="../js/bootstrap.js"></script>-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
