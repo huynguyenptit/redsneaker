@@ -14,67 +14,83 @@
     <div class="container pb-5">
         <header class="row text-right text-gray m-0">
             <!--// Row1-->
+            <!--Đây là code dòng đầu tiên dùng để Login/Join và truy cập vào trang giỏ hàng. Khi click vào nút Login hoặc Join sẽ hiện ra form tương ứng (Sử dụng compent modal trong bootstrap)-->
             <div class="container">
+                <!--Cấu trúc được sử dụng ở đây là cấu trúc theo dạng Liệt kê, danh sách sử dụng các thẻ ul, li-->
                 <ul class="list-inline w-100 border-bottom mt-1 mb-0" style="font-size: 12px; line-height: 25px">
                     <li class="list-inline-item pl-2">
-                        <a href="/" data-toggle="modal" data-target="#login_form">Login</a> &nbsp;/&nbsp; <a href="#"
-                                                                                                             data-toggle="modal"
-                                                                                                             data-target="#join_form">Join</a>
+                        <!--Đây là nút Login-->
+                        <a href="/" data-toggle="modal" data-target="#login_form">Login</a> &nbsp;/&nbsp;
+                        <!--Đây là nút Join-->
+                        <a href="#" data-toggle="modal" data-target="#join_form">Join</a>
                     </li>
+                    <!--Đây là nút help-->
                     <li class="list-inline-item pl-2">
-                        <a href="help-page.html">Help</a>
+                        <a href="#">Help</a>
                     </li>
+                    <!--Đây là nút trỏ về trang giỏ hàng-->
                     <li class="list-inline-item pl-2">
                         <a href="cart.html">
                             <i class="fa fa-shopping-cart"></i>
                         </a>
                     </li>
+                    <!--Đây là nút icon địa cầu.-->
                     <li class="list-inline-item pl-2">
                         <a href="">
+                            <!--icon sử dụng thư viện Font Awesome-->
                             <i class="fa fa-globe"></i> <i class="fa fa-angle-down"></i>
                         </a>
                     </li>
                 </ul>
 
             </div>
+            <!--Đây là code menu (sử dụng component Navbar của bootstrap) -->
             <div class="menu w-100" style="height: 30px !important;">
                 <nav class="navbar navbar-expand-lg w-100 h-100">
+                    <!--Đây là nút ảnh logo và điều hướng về trang chủ-->
                     <a class="navbar-brand ml-4" href="trang-chu.html">
                         <img src="images/logo.png" alt="" style="height: 27px;">
                         <span class="logo-text">
                             <span style="color: #eb142a;">RED</span><span style="color: black">SNEAKER.COM</span>
                         </span>
                     </a>
+                    <!--Đây là nút ẩn, hiện menu website được mở ở chế độ mobile-->
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+                    <!--Danh sách các trang được đưa vào menu. Được hiển thị theo dạng danh sách sử dụng thẻ ul, li-->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 13px">
                         <ul class="navbar-nav m-auto">
+                            <!--Đây là nút trang chủ (home)-->
                             <li class="nav-item active">
                                 <a class="nav-link" href="trang-chu.html">Home</a>
                             </li>
+                            <!--Đây là nút trang thương hiệu (brand). Sử dụng Component Dropdown để làm menu cấp 2-->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/brand-page.html" id="navbardrop" data-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle" href="brand-page.html" id="navbardrop" data-toggle="dropdown">
                                     Brands
                                 </a>
+                                <!--Đây là danh sách các trang menu cấp 2-->
                                 <div class="dropdown-menu child-menu">
-                                    <a class="dropdown-item" href="/brand-page.html?type_filter=adidas">adidas</a>
-                                    <a class="dropdown-item" href="/brand-page.html?type_filter=nike">nike</a>
-                                    <a class="dropdown-item" href="/brand-page.html?type_filter=converse">converse</a>
+                                    <a class="dropdown-item" href="brand-page.html?type_filter=adidas">adidas</a>
+                                    <a class="dropdown-item" href="brand-page.html?type_filter=nike">nike</a>
+                                    <a class="dropdown-item" href="brand-page.html?type_filter=converse">converse</a>
                                 </div>
                             </li>
+                            <!--Đây là trang New Arrivals. Hiện tại chưa có trang này-->
                             <li class="nav-item">
-                                <a class="nav-link" href="brand-page.html">
+                                <a class="nav-link" href="#">
                                     new arrivals
                                 </a>
                             </li>
+                            <!--Đây là trang sale. Hiện tại chưa có trang này-->
                             <li class="nav-item">
-                                <a class="nav-link" href="brand-page.html">sales</a>
+                                <a class="nav-link" href="#">sales</a>
                             </li>
                         </ul>
+                        <!--Đây là ô tìm kiếm sử dụng thẻ input trong form-->
                         <form class="form-inline my-2 my-lg-0">
                             <button class="btn bg-white border-gray menu-search-button search-form" type="submit"
                                     style="margin-right: -40px; z-index: 2; color: gray"><i class="fa fa-search"></i>
@@ -88,26 +104,31 @@
             <!--// slider news-->
 
         </header>
-        <!-- Modal Login-->
+        <!-- Đây là code của form  Join khi click vào nút Join ở trên. Sử dụng component modal của bootstrap-->
         <div class="modal fade" id="join_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content form-modal">
+                    <!--Đây là phần header của Modal chưa nút đóng (Close) modal-->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    <!--Đây là phần thân của Modal -->
                     <div class="modal-body">
+                        <!--Đây là logo-->
                         <div class="logo" style="text-align: center">
                             <img src="images/logo.png" style="height: 25px" alt="">
                         </div>
                         <br>
+                        <!--Đây là dòng chữ YOUR FOR EVERYTHING FORM RED SNEAKER-->
                         <div class="slogan" style="text-align: center;">
                             YOUR FOR EVERYTHING FORM
                             <br>
                             <span style="color: red">RED</span>SNEAKER
                         </div>
+                        <!--Đây là nút đăng kí bằng facebook-->
                         <button class="btn btn-primary btn-custom mt-4">
                             <div class="pull-left"><i class="fa fa-facebook"></i></div>
                             <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
@@ -115,27 +136,35 @@
                         <fieldset class="text-fieldset">
                             <legend class="text-legend">OR</legend>
                         </fieldset>
+                        <!--Đây là form đăng kí-->
                         <div class="form-section">
                             <form action="#">
+                                <!--Trường nhập Email-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Email">
                                 </div>
+                                <!--Trường nhập Password-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Password">
                                 </div>
+                                <!--Trường nhập lại password-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom"
                                            placeholder="Retype Password">
                                 </div>
+                                <!--Trường nhập Firstname-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="First Name">
                                 </div>
+                                <!--Trường nhập Lastname-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Last Name">
                                 </div>
+                                <!--Trường nhập ngày sinh-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Date of Birth">
                                 </div>
+                                <!--Ô chọn Quốc gia sử dụng thẻ select trong html-->
                                 <div class="form-group">
                                     <select name="" class="form-control form-custom" id="">
                                         <option value="0" selected> - Country -</option>
@@ -144,23 +173,26 @@
                                         <option value="3"> Nhật Bản</option>
                                     </select>
                                 </div>
-
+                                <!--Đây là ô checkbox điều khoản sử dụng-->
                                 <div class="form-group ">
                                     <label class="custom-checkbox">
                                         <input type="checkbox">
                                         <span class="checkmark"></span>
                                         Sign up for emails to hear all latest from Redsneaker.</label>
                                 </div>
+                                Đây là dòng chữ By creating an account,......
                                 <div class="form-group">
                                         <span>By creating an account, you agree to Redsneaker's <a href="help-page.html"
                                                                                                    class="link_custom_modal">Privacy Policy</a> and <a
                                                 href="help-page.html" class="link_custom_modal">Terms of Use</a></span>
                                 </div>
+                                <!--Đây là nút đăng kí - Create Accout-->
                                 <div class="form-group">
                                     <button class="btn btn-submit btn-custom">
                                         CREATE ACCOUNT
                                     </button>
                                 </div>
+                                <!--Đây là câu hỏi Already a member.....-->
                                 <div class="form-group text-center">
                                     Already a member? <a href="#" class="link_custom_modal">Sign in</a>
                                 </div>
@@ -170,36 +202,44 @@
                 </div>
             </div>
         </div>
-        <!-- Modal Login-->
+
+        <!-- Đây là code của form  Login khi click vào nút Login ở trên. Sử dụng component modal của bootstrap-->
         <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content form-modal">
+                    <!--Đây là phần header của Modal chưa nút đóng (Close) modal-->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    <!--Đây là phần thân (body) của Modal-->
                     <div class="modal-body">
+                        <!--Đây là ảnh logo trong modal-->
                         <div class="logo" style="text-align: center">
                             <img src="images/logo.png" style="height: 25px" alt="">
                         </div>
                         <br>
+                        <!--Đây là dòng chữ YOUR FOR EVERYTHING FORM RED SNEAKER-->
                         <div class="slogan" style="text-align: center;">
                             YOUR FOR EVERYTHING FORM
                             <br>
                             <span style="color: red">RED</span>SNEAKER
                         </div>
-
+                        <!--Đây là form đăng nhập (Login)-->
                         <div class="form-section">
                             <form action="#">
+                                <!--Trường nhập Email-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Email">
                                 </div>
+                                <!--Trường nhập password-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Password">
                                 </div>
                                 <div class="row form-group">
+                                    <!--Ô checkbox ghi nhớ đăng nhập-->
                                     <div class="col-md-6">
                                         <label class="custom-checkbox text-left" for="remember" >
                                             <input type="checkbox" id="remember">
@@ -207,20 +247,23 @@
                                             Keep me logged in
                                         </label>
                                     </div>
+                                    <!--Nút quên mật khẩu-->
                                     <div class="col-md-6">
                                         <a href=""> Forgotten your password?</a>
                                     </div>
                                 </div>
+                                <!--Nút Đăng nhập-->
                                 <div class="form-group">
                                     <button class="btn btn-submit btn-custom">
                                         LOGIN
                                     </button>
                                 </div>
-
+                                <!--Nút đăng kí bằng tài khoản facebook-->
                                 <button class="btn btn-primary btn-custom mt-1">
                                     <div class="pull-left"><i class="fa fa-facebook"></i></div>
                                     <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
                                 </button>
+                                <!--Dòng chữ Already....-->
                                 <div class="form-group text-center mt-2 ">
                                     Already a member? <a href="#" class="link_custom_modal">Sign in</a>
                                 </div>
@@ -230,7 +273,7 @@
                 </div>
             </div>
         </div>
-
+        <!--Đoạn chữ chạy ngang trên phía đầu trang. Sử dụng thẻ marquee của html-->
         <div class="row hot_news m-0">
             <div class="news_content" id="news_content" style="position:relative; overflow: hidden">
                 <marquee class="font-weight-bold">
@@ -256,26 +299,28 @@
                         </div>
 
                     </div>
+                    <!--Siderbar sắp xếp sản phẩm theo giá, theo ngày-->
                     <div class="filter-content">
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="new_to_old" onclick="filter('new_to_old')">New to old</a>
+                            <a href="javascript:" id="new_to_old" >New to old</a>
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="old_to_new" onclick="filter('old_to_new')">Old to new</a>
+                            <a href="javascript:" id="old_to_new" >Old to new</a>
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="price_high_to_low" onclick="filter('price_high_to_low')">
+                            <a href="javascript:" id="price_high_to_low" >
                                 Price high to low
                             </a>
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="price_low_to_high" onclick="filter('price_low_to_high')">Price low to high</a>
+                            <a href="javascript:" id="price_low_to_high" >Price low to high</a>
                         </div>
                         <div class="fc-item pt-2 pb-1">
                             <a href="javascript:" id="scale">Scale(20)</a>
                         </div>
                     </div>
                 </div>
+                <!--Filter sản phẩm-->
                 <div class="filter pt-5">
                     <div class="row m-0 filter-title text-uppercase">
                         <div class="col-10 pl-0">
@@ -283,6 +328,7 @@
                         </div>
 
                     </div>
+                    <!--Filter theo thương hiệu-->
                     <div class="filter-content">
                         <div class="row m-0 ft-item pt-2 pb-1 sub-ft-item">
                             <div class="p-0 col-8 text-uppercase">
@@ -290,24 +336,26 @@
                             </div>
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="all" onclick="filter('all')">All(90)</a>
+                            <a href="javascript:" id="all" >All(90)</a>
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="adidas" onclick="filter('adidas')">Adidas(30)</a>
+                            <a href="javascript:" id="adidas" >Adidas(30)</a>
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="nike" onclick="filter('nike')">Nike(30)</a>
+                            <a href="javascript:" id="nike" >Nike(30)</a>
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="converse" onclick="filter('converse')">Converse(30)</a>
+                            <a href="javascript:" id="converse" >Converse(30)</a>
                         </div>
                         <div class="col-10 filter-title mt-3 mb-3" style="border: 0.5px solid #d7d7d7;"></div>
+                        <!--Filter theo màu-->
                         <div class="row m-0 ft-item pt-2 pb-1 sub-ft-item">
                             <div class="p-0 col-8 text-uppercase">
                                 colors(11)
                             </div>
 
                         </div>
+                        <!-- Dành sách các nút màu-->
                         <div class="row m-0 fc-item pt-2 pb-1">
                             <div class="col-4 pl-0">
                                 <a href="javascript:">
@@ -345,6 +393,7 @@
                                 </a>
                             </div>
                         </div>
+                        <!--Kích cỡ-->
                         <div class="col-10 filter-title mt-3 mb-3" style="border: 0.5px solid #d7d7d7;"></div>
                         <div class="row m-0 ft-item pt-2 pb-1 sub-ft-item">
                             <div class="p-0 col-8 text-uppercase">
@@ -375,6 +424,7 @@
                                 </a>
                             </div>
                         </div>
+                        <!--Danh sách các mức kích cỡ-->
                         <div class="row m-0 fc-item p-0 pt-2 pb-1 col-10">
                             <table class="text-center tab-content table-bordered w-100">
                                 <tr>
@@ -391,6 +441,7 @@
                                 </tr>
                             </table>
                         </div>
+                        <!--Filter theo mục đích sử dụng-->
                         <div class="col-10 filter-title mt-3 mb-3" style="border: 0.5px solid #d7d7d7;"></div>
                         <div class="row m-0 ft-item pt-2 pb-1 sub-ft-item">
                             <div class="p-0 col-8 text-uppercase">
@@ -399,33 +450,439 @@
 
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="all_athletic" onclick="filter('all_athletic')">All(90)</a>
+                            <a href="javascript:" id="all_athletic" >All(90)</a>
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="athletic" onclick="filter('athletic')">Athletic(50)</a>
+                            <a href="javascript:" id="athletic" >Athletic(50)</a>
                         </div>
                         <div class="fc-item pt-2 pb-1">
-                            <a href="javascript:" id="casual" onclick="filter('casual')">Casual(40)</a>
+                            <a href="javascript:" id="casual" >Casual(40)</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--Danh sách sản phẩm-->
             <div class="col-9 pr-5 list-product">
                 <div class="lp-title text-uppercase">
                     product
                 </div>
+                <!--Danh sách sản phẩm. Mỗi Item sản phẩm sử dụng component panel của bootstrap-->
                 <div class="row m-0 lp-content">
+                    <div class="row m-0 lp-content" style=""><div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <!--Ảnh sản phẩm-->
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_1.jpg" alt="slide 1">
 
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <!--Tên sản phẩm-->
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <!--Mô tả sản phẩm-->
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <!--Giá sản phẩm-->
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            199$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <!--Ảnh sản phẩm-->
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_2.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <!--Tên sản phẩm-->
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <!--Mô tả sản phẩm-->
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <!--Giá sản phẩm-->
+                                        <div class="tc-price">
+                                            <span class="new-price">
+                                            199$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_3.jpg" alt="slide 1">
+                                    <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+                                            <span class="old-price mr-3">
+                                210$
+                             </span>
+                                            <span class="new-price">
+                                            199$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_4.jpg" alt="slide 1">
+                                    <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+                                            <span class="old-price mr-3">
+                                210$
+                             </span>
+                                            <span class="new-price">
+                                            199$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_5.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            210$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_6.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            211$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_7.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            220$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_8.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            210$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_9.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            210$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_10.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            210$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_11.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            210$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_12.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            210$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_13.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            210$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_1.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            210$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3 p-0 m-2">
+                        <div class="panel panel-default">
+                            <div class="panel-thumbnail">
+                                <div title="image 1" class="thumb">
+                                    <img class="img-fluid mx-auto d-block" src="images/adidas_2.jpg" alt="slide 1">
+
+                                    <div class="thumb-content text-uppercase p-2">
+                                        <div class="tc-title">
+                                            <a href="javascript:" class="text-dark">
+                                                adidas
+                                            </a>
+                                        </div>
+                                        <div class="tc-des">
+                                            adidas vapormax flykinit moc 2
+                                        </div>
+                                        <div class="tc-price">
+
+                                            <span class="new-price">
+                                            210$
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
                 </div>
+                <!--Phân trang-->
                 <div class="row col-12 mt-3 m-5 lp-paginate text-center">
                     <div class="col-3"></div>
                     <div class="col-1 text-center">
+                        <!--Nút click sang về trang trước-->
                         <a href="javascript:">
                             <div class="pagi-arrow">
                                 <i class="fa fa-chevron-left"></i>
                             </div>
                         </a>
                     </div>
+                    <!--Danh sách các trang-->
                     <div class="col-2 pl-0 pagi-number text-center">
                         <span class="m-2">
                             <a href="javascript:" class="pagi-active">1</a>
@@ -440,6 +897,7 @@
                             <a href="javascript:">4</a>
                         </span>
                     </div>
+                    <!--Nút click sang trang tiếp theo-->
                     <div class="col-1 text-center">
                         <a href="javascript:">
                             <div class="pagi-arrow">
@@ -452,107 +910,114 @@
         </div>
     </div>
     <footer class="row text-white pt-5 pb-5 m-0 pl-2">
+        <!--Lùi vào 2 cột-->
         <div class="col-2"></div>
+        <!--Cột đầu tiên của footer-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 get help
             </div>
             <div class="footer-list">
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Customer infomation
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Order status/ Returns
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Feedback
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         FAQs
                     </a>
                 </div>
             </div>
         </div>
+        <!--Cột thứ 2 của footer-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 contact
             </div>
             <div class="footer-list">
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Email: info@redsneaker.com
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Hot-line: +84 123456789
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         General terms and conditions
                     </a>
                 </div>
             </div>
         </div>
+        <!--Cột thứ 3 của footer-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 payment method
             </div>
             <div class="footer-list">
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Visa
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Master card
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Paypal
                     </a>
                 </div>
             </div>
         </div>
+        <!--Cột thứ 4 của footer. Các icon sử dụng đều được lấy ra từ thư viện font awesome-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 social media
             </div>
             <div class="footer-list">
-                <div class="row">
-                    <div class="col-2 text-dark p-0">
-                        <a class="fa fa-facebook-f social-item m-auto" href="javascript:"></a>
-                    </div>
-                    <div class="col-2 text-dark p-0">
-                        <a class="fa fa-twitter social-item m-auto" href="javascript:"></a>
-                    </div>
-                    <div class="col-2 text-dark p-0">
-                        <a class="fa fa-instagram social-item m-auto" href="javascript:"></a>
-                    </div>
-                    <div class="col-2 text-dark p-0">
-                        <a class="fa fa-google-plus social-item m-auto" href="javascript:"></a>
-                    </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-facebook-f social-item m-auto" href="#"></a>
+                </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-twitter social-item m-auto" href="#"></a>
+                </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-instagram social-item m-auto" href="#"></a>
+                </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-google-plus social-item m-auto" href="#"></a>
                 </div>
             </div>
         </div>
         <div class="col-2"></div>
+        <!--Dòng dưới cùng footer-->
         <div class="col-12 row bottom-footer mt-5">
+            <!--Lùi vào 2 cột-->
             <div class="col-2"></div>
+            <!--Dòng chữ Redsneaker-->
             <div class="col-4  pt-3">
                 <span class="text-uppercase">
-                    resneaker @ 2018
+                    redsneaker @ 2018
                 </span>
             </div>
+            <!--Logo dưới footer-->
             <div class="col-6 pl-0">
                 <img src="images/logo-white.png" class="logo-footer">
             </div>
@@ -561,1582 +1026,5 @@
 </div>
 
 </body>
-<!--<script src="../js/bootstrap.js"></script>-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script>
-    function filter(type){
-        var object;
-        $('.lp-content').empty();
-        $('.lp-content').hide();
-        $('.filter-active').removeClass('filter-active');
-        switch (type){
-            case "new_to_old":
-                $('#new_to_old').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/adidas_3.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    4: {
-                        img_src: "images/adidas_4.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    5: {
-                        img_src: "images/adidas_5.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "211$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    13: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    14: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    }
-                };
-                break;
-            case "old_to_new":
-                $('#old_to_new').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    4: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    5: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "211$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_5.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_4.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    13: {
-                        img_src: "images/adidas_3.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    14: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                };
-                break;
-            case "price_high_to_low":
-                $('#price_high_to_low').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/nike_1.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "300$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/nike_2.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "280$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/nike_3.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "270$",
-                        old_price: "350$",
-                        sale: true
-                    },
-                    4: {
-                        img_src: "images/nike_4.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "265$",
-                        old_price: "300$",
-                        sale: true
-                    },
-                    5: {
-                        img_src: "images/nike_5.JPG",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "250$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "240$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "230$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    13: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    14: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    }
-                };
-                break;
-            case "price_low_to_high":
-                $('#price_low_to_high').parent().addClass('filter-active');
-                var object = {
-                    15: {
-                        img_src: "images/nike_1.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "300$",
-                        old_price: "",
-                        sale: false
-                    },
-                    14: {
-                        img_src: "images/nike_2.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "280$",
-                        old_price: "",
-                        sale: false
-                    },
-                    13: {
-                        img_src: "images/nike_3.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "270$",
-                        old_price: "350$",
-                        sale: true
-                    },
-                    12: {
-                        img_src: "images/nike_4.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "265$",
-                        old_price: "300$",
-                        sale: true
-                    },
-                    11: {
-                        img_src: "images/nike_5.JPG",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "250$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "240$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "230$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    5: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    4: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    1: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    }
-                };
-                break;
-            case "all":
-                $('#all').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/nike_1.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "300$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/nike_2.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "280$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/nike_3.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "270$",
-                        old_price: "350$",
-                        sale: true
-                    },
-                    4: {
-                        img_src: "images/nike_4.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "265$",
-                        old_price: "300$",
-                        sale: true
-                    },
-                    5: {
-                        img_src: "images/nike_5.JPG",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "250$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "240$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "230$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    13: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    14: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    }
-                };
-                break;
-            case "nike":
-                $('#nike').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/nike_1.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "300$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/nike_2.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "280$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/nike_3.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "270$",
-                        old_price: "350$",
-                        sale: true
-                    },
-                    4: {
-                        img_src: "images/nike_4.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "265$",
-                        old_price: "300$",
-                        sale: true
-                    },
-                    5: {
-                        img_src: "images/nike_5.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "250$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/nike_7.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "240$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/nike_8.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "230$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/nike_9.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    13: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    14: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    }
-                };
-                break;
-            case "adidas":
-                $('#adidas').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    4: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    5: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "211$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_5.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_4.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    13: {
-                        img_src: "images/adidas_3.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    14: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                };
-                break;
-            case "athletic":
-                $('#athletic').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/nike_1.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "300$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/nike_2.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "280$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/nike_3.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "270$",
-                        old_price: "350$",
-                        sale: true
-                    },
-                    4: {
-                        img_src: "images/nike_4.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "265$",
-                        old_price: "300$",
-                        sale: true
-                    },
-                    5: {
-                        img_src: "images/nike_5.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "250$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/nike_7.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "240$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/nike_8.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "230$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/nike_9.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    13: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    14: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    }
-                };
-                break;
-            case "all_athletic":
-                $('#all_athletic').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    4: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    5: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "211$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_5.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_4.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    13: {
-                        img_src: "images/adidas_3.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    14: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                };
-                break;
-            case "casual":
-                $('#casual').parent().addClass('filter-active');
-                var object = {
-                    15: {
-                        img_src: "images/nike_1.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "300$",
-                        old_price: "",
-                        sale: false
-                    },
-                    14: {
-                        img_src: "images/nike_2.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "280$",
-                        old_price: "",
-                        sale: false
-                    },
-                    13: {
-                        img_src: "images/nike_3.jpg",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "270$",
-                        old_price: "350$",
-                        sale: true
-                    },
-                    12: {
-                        img_src: "images/nike_4.JPG",
-                        title: "nike",
-                        des: "nike vapormax flykinit moc 2",
-                        new_price: "265$",
-                        old_price: "300$",
-                        sale: true
-                    },
-                    11: {
-                        img_src: "images/nike_5.JPG",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "250$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "240$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "230$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    5: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    4: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    1: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    }
-                };
-                break;
-            case "converse":
-                $('#converse').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/nike_1.JPG",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "300$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/nike_2.JPG",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "280$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/nike_3.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "270$",
-                        old_price: "350$",
-                        sale: true
-                    },
-                    4: {
-                        img_src: "images/nike_4.JPG",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "265$",
-                        old_price: "300$",
-                        sale: true
-                    },
-                    5: {
-                        img_src: "images/nike_5.JPG",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "250$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "240$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "230$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    13: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    14: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "converse",
-                        des: "converse vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    }
-                };
-                break;
-            default:
-                $('#new_to_old').parent().addClass('filter-active');
-                var object = {
-                    1: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                    2: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "",
-                        sale: false
-                    },
-                    3: {
-                        img_src: "images/adidas_3.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    4: {
-                        img_src: "images/adidas_4.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "199$",
-                        old_price: "210$",
-                        sale: true
-                    },
-                    5: {
-                        img_src: "images/adidas_5.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    6: {
-                        img_src: "images/adidas_6.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "211$",
-                        old_price: "",
-                        sale: false
-                    },
-                    7: {
-                        img_src: "images/adidas_7.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "220$",
-                        old_price: "",
-                        sale: false
-                    },
-                    8: {
-                        img_src: "images/adidas_8.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    9: {
-                        img_src: "images/adidas_9.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    10: {
-                        img_src: "images/adidas_10.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    11: {
-                        img_src: "images/adidas_11.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    12: {
-                        img_src: "images/adidas_12.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    13: {
-                        img_src: "images/adidas_13.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    14: {
-                        img_src: "images/adidas_1.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    },
-                    15: {
-                        img_src: "images/adidas_2.jpg",
-                        title: "adidas",
-                        des: "adidas vapormax flykinit moc 2",
-                        new_price: "210$",
-                        old_price: "",
-                        sale: false
-                    }
-                };
-                break;
-        }
-        var html = "";
-        for(var key in object){
-            var old_price = "";
-            var sale = "";
-            if (object[key].old_price){
-                old_price = `<span class="old-price mr-3">
-                                ${object[key].old_price}
-                             </span>`
-            }
-            if (object[key].sale){
-                sale = `<button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>`
-            }
-            html += `<div class="col-3 p-0 m-2">
-                        <div class="panel panel-default">
-                            <div class="panel-thumbnail">
-                                <div title="image 1" class="thumb">
-                                    <img class="img-fluid mx-auto d-block" src="${object[key].img_src}" alt="slide 1">
-                                    ${sale}
-                                    <div class="thumb-content text-uppercase p-2">
-                                        <div class="tc-title">
-                                            <a href="javascript:" class="text-dark">
-                                                ${object[key].title}
-                                            </a>
-                                        </div>
-                                        <div class="tc-des">
-                                            ${object[key].des}
-                                        </div>
-                                        <div class="tc-price">
-                                            ${old_price}
-                                            <span class="new-price">
-                                            ${object[key].new_price}
-                                        </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>`;
-        }
-        $('.lp-content').append(html);
-        $('.lp-content').fadeIn(500);
-    }
-    function getUrlParameter(sParam) {
-        var sPageURL = decodeURIComponent(window.location.search.substring(1)),
-            sURLVariables = sPageURL.split('&'),
-            sParameterName,
-            i;
-
-        for (i = 0; i < sURLVariables.length; i++) {
-            sParameterName = sURLVariables[i].split('=');
-
-            if (sParameterName[0] === sParam) {
-                return sParameterName[1] === undefined ? true : sParameterName[1];
-            }
-        }
-    }
-    filter(getUrlParameter('type_filter'));
-    $('.ft-color').click(function(){
-       $('.ft-cl-active').removeClass('ft-cl-active');
-       $(this).addClass('ft-cl-active');
-    });
-    $('td').click(function () {
-        $('td').attr('style','background: #ffffff;color: black')
-        $(this).attr('style','background: #eb142a;color: #ffffff');
-    });
-</script>
 
 </html>

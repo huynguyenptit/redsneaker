@@ -15,67 +15,83 @@
     <div class="container px-0">
         <header class="row text-right text-gray m-0">
             <!--// Row1-->
+            <!--Đây là code dòng đầu tiên dùng để Login/Join và truy cập vào trang giỏ hàng. Khi click vào nút Login hoặc Join sẽ hiện ra form tương ứng (Sử dụng compent modal trong bootstrap)-->
             <div class="container">
+                <!--Cấu trúc được sử dụng ở đây là cấu trúc theo dạng Liệt kê, danh sách sử dụng các thẻ ul, li-->
                 <ul class="list-inline w-100 border-bottom mt-1 mb-0" style="font-size: 12px; line-height: 25px">
                     <li class="list-inline-item pl-2">
-                        <a href="/" data-toggle="modal" data-target="#login_form">Login</a> &nbsp;/&nbsp; <a href="#"
-                                                                                                             data-toggle="modal"
-                                                                                                             data-target="#join_form">Join</a>
+                        <!--Đây là nút Login-->
+                        <a href="/" data-toggle="modal" data-target="#login_form">Login</a> &nbsp;/&nbsp;
+                        <!--Đây là nút Join-->
+                        <a href="#" data-toggle="modal" data-target="#join_form">Join</a>
                     </li>
+                    <!--Đây là nút help-->
                     <li class="list-inline-item pl-2">
-                        <a href="help-page.html">Help</a>
+                        <a href="#">Help</a>
                     </li>
+                    <!--Đây là nút trỏ về trang giỏ hàng-->
                     <li class="list-inline-item pl-2">
                         <a href="cart.html">
                             <i class="fa fa-shopping-cart"></i>
                         </a>
                     </li>
+                    <!--Đây là nút icon địa cầu.-->
                     <li class="list-inline-item pl-2">
                         <a href="">
+                            <!--icon sử dụng thư viện Font Awesome-->
                             <i class="fa fa-globe"></i> <i class="fa fa-angle-down"></i>
                         </a>
                     </li>
                 </ul>
 
             </div>
+            <!--Đây là code menu (sử dụng component Navbar của bootstrap) -->
             <div class="menu w-100" style="height: 30px !important;">
                 <nav class="navbar navbar-expand-lg w-100 h-100">
+                    <!--Đây là nút ảnh logo và điều hướng về trang chủ-->
                     <a class="navbar-brand ml-4" href="trang-chu.html">
                         <img src="images/logo.png" alt="" style="height: 27px;">
                         <span class="logo-text">
                             <span style="color: #eb142a;">RED</span><span style="color: black">SNEAKER.COM</span>
                         </span>
                     </a>
+                    <!--Đây là nút ẩn, hiện menu website được mở ở chế độ mobile-->
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+                    <!--Danh sách các trang được đưa vào menu. Được hiển thị theo dạng danh sách sử dụng thẻ ul, li-->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 13px">
                         <ul class="navbar-nav m-auto">
+                            <!--Đây là nút trang chủ (home)-->
                             <li class="nav-item active">
                                 <a class="nav-link" href="trang-chu.html">Home</a>
                             </li>
+                            <!--Đây là nút trang thương hiệu (brand). Sử dụng Component Dropdown để làm menu cấp 2-->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/brand-page.html" id="navbardrop" data-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle" href="brand-page.html" id="navbardrop" data-toggle="dropdown">
                                     Brands
                                 </a>
+                                <!--Đây là danh sách các trang menu cấp 2-->
                                 <div class="dropdown-menu child-menu">
-                                    <a class="dropdown-item" href="/brand-page.html?type_filter=adidas">adidas</a>
-                                    <a class="dropdown-item" href="/brand-page.html?type_filter=nike">nike</a>
-                                    <a class="dropdown-item" href="/brand-page.html?type_filter=converse">converse</a>
+                                    <a class="dropdown-item" href="brand-page.html?type_filter=adidas">adidas</a>
+                                    <a class="dropdown-item" href="brand-page.html?type_filter=nike">nike</a>
+                                    <a class="dropdown-item" href="brand-page.html?type_filter=converse">converse</a>
                                 </div>
                             </li>
+                            <!--Đây là trang New Arrivals. Hiện tại chưa có trang này-->
                             <li class="nav-item">
-                                <a class="nav-link" href="brand-page.html">
+                                <a class="nav-link" href="#">
                                     new arrivals
                                 </a>
                             </li>
+                            <!--Đây là trang sale. Hiện tại chưa có trang này-->
                             <li class="nav-item">
-                                <a class="nav-link" href="brand-page.html">sales</a>
+                                <a class="nav-link" href="#">sales</a>
                             </li>
                         </ul>
+                        <!--Đây là ô tìm kiếm sử dụng thẻ input trong form-->
                         <form class="form-inline my-2 my-lg-0">
                             <button class="btn bg-white border-gray menu-search-button search-form" type="submit"
                                     style="margin-right: -40px; z-index: 2; color: gray"><i class="fa fa-search"></i>
@@ -89,26 +105,31 @@
             <!--// slider news-->
 
         </header>
-        <!-- Modal Login-->
+        <!-- Đây là code của form  Join khi click vào nút Join ở trên. Sử dụng component modal của bootstrap-->
         <div class="modal fade" id="join_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content form-modal">
+                    <!--Đây là phần header của Modal chưa nút đóng (Close) modal-->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    <!--Đây là phần thân của Modal -->
                     <div class="modal-body">
+                        <!--Đây là logo-->
                         <div class="logo" style="text-align: center">
                             <img src="images/logo.png" style="height: 25px" alt="">
                         </div>
                         <br>
+                        <!--Đây là dòng chữ YOUR FOR EVERYTHING FORM RED SNEAKER-->
                         <div class="slogan" style="text-align: center;">
                             YOUR FOR EVERYTHING FORM
                             <br>
                             <span style="color: red">RED</span>SNEAKER
                         </div>
+                        <!--Đây là nút đăng kí bằng facebook-->
                         <button class="btn btn-primary btn-custom mt-4">
                             <div class="pull-left"><i class="fa fa-facebook"></i></div>
                             <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
@@ -116,27 +137,35 @@
                         <fieldset class="text-fieldset">
                             <legend class="text-legend">OR</legend>
                         </fieldset>
+                        <!--Đây là form đăng kí-->
                         <div class="form-section">
                             <form action="#">
+                                <!--Trường nhập Email-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Email">
                                 </div>
+                                <!--Trường nhập Password-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Password">
                                 </div>
+                                <!--Trường nhập lại password-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom"
                                            placeholder="Retype Password">
                                 </div>
+                                <!--Trường nhập Firstname-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="First Name">
                                 </div>
+                                <!--Trường nhập Lastname-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Last Name">
                                 </div>
+                                <!--Trường nhập ngày sinh-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Date of Birth">
                                 </div>
+                                <!--Ô chọn Quốc gia sử dụng thẻ select trong html-->
                                 <div class="form-group">
                                     <select name="" class="form-control form-custom" id="">
                                         <option value="0" selected> - Country -</option>
@@ -145,23 +174,26 @@
                                         <option value="3"> Nhật Bản</option>
                                     </select>
                                 </div>
-
+                                <!--Đây là ô checkbox điều khoản sử dụng-->
                                 <div class="form-group ">
                                     <label class="custom-checkbox">
                                         <input type="checkbox">
                                         <span class="checkmark"></span>
                                         Sign up for emails to hear all latest from Redsneaker.</label>
                                 </div>
+                                Đây là dòng chữ By creating an account,......
                                 <div class="form-group">
                                         <span>By creating an account, you agree to Redsneaker's <a href="help-page.html"
                                                                                                    class="link_custom_modal">Privacy Policy</a> and <a
                                                 href="help-page.html" class="link_custom_modal">Terms of Use</a></span>
                                 </div>
+                                <!--Đây là nút đăng kí - Create Accout-->
                                 <div class="form-group">
                                     <button class="btn btn-submit btn-custom">
                                         CREATE ACCOUNT
                                     </button>
                                 </div>
+                                <!--Đây là câu hỏi Already a member.....-->
                                 <div class="form-group text-center">
                                     Already a member? <a href="#" class="link_custom_modal">Sign in</a>
                                 </div>
@@ -171,36 +203,44 @@
                 </div>
             </div>
         </div>
-        <!-- Modal Login-->
+
+        <!-- Đây là code của form  Login khi click vào nút Login ở trên. Sử dụng component modal của bootstrap-->
         <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content form-modal">
+                    <!--Đây là phần header của Modal chưa nút đóng (Close) modal-->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    <!--Đây là phần thân (body) của Modal-->
                     <div class="modal-body">
+                        <!--Đây là ảnh logo trong modal-->
                         <div class="logo" style="text-align: center">
                             <img src="images/logo.png" style="height: 25px" alt="">
                         </div>
                         <br>
+                        <!--Đây là dòng chữ YOUR FOR EVERYTHING FORM RED SNEAKER-->
                         <div class="slogan" style="text-align: center;">
                             YOUR FOR EVERYTHING FORM
                             <br>
                             <span style="color: red">RED</span>SNEAKER
                         </div>
-
+                        <!--Đây là form đăng nhập (Login)-->
                         <div class="form-section">
                             <form action="#">
+                                <!--Trường nhập Email-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Email">
                                 </div>
+                                <!--Trường nhập password-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Password">
                                 </div>
                                 <div class="row form-group">
+                                    <!--Ô checkbox ghi nhớ đăng nhập-->
                                     <div class="col-md-6">
                                         <label class="custom-checkbox text-left" for="remember" >
                                             <input type="checkbox" id="remember">
@@ -208,20 +248,23 @@
                                             Keep me logged in
                                         </label>
                                     </div>
+                                    <!--Nút quên mật khẩu-->
                                     <div class="col-md-6">
                                         <a href=""> Forgotten your password?</a>
                                     </div>
                                 </div>
+                                <!--Nút Đăng nhập-->
                                 <div class="form-group">
                                     <button class="btn btn-submit btn-custom">
                                         LOGIN
                                     </button>
                                 </div>
-
+                                <!--Nút đăng kí bằng tài khoản facebook-->
                                 <button class="btn btn-primary btn-custom mt-1">
                                     <div class="pull-left"><i class="fa fa-facebook"></i></div>
                                     <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
                                 </button>
+                                <!--Dòng chữ Already....-->
                                 <div class="form-group text-center mt-2 ">
                                     Already a member? <a href="#" class="link_custom_modal">Sign in</a>
                                 </div>
@@ -231,7 +274,7 @@
                 </div>
             </div>
         </div>
-
+        <!--Đoạn chữ chạy ngang trên phía đầu trang. Sử dụng thẻ marquee của html-->
         <div class="row hot_news m-0">
             <div class="news_content" id="news_content" style="position:relative; overflow: hidden">
                 <marquee class="font-weight-bold">
@@ -249,47 +292,60 @@
         <div class="container mt-4 container-product">
             <div class="row">
                 <div class="col-md-7">
-                    <!-- #region Jssor Slider Begin -->
+                    <!-- Slider ảnh sản phẩm (Nguồn tham khảo Jsssor.com) -->
 
                     <div id="product_slider_main"
                          style="position:relative;margin:0 auto;top:0px;left:0px;width:980px;overflow:hidden;visibility:hidden;">
-                        <!-- Loading Screen -->
+                        <!-- Màn hình loading -->
                         <div data-u="loading" class="jssorl-009-spin"
                              style="position:absolute;top:0px;left:0px;width:100%;height:100%;text-align:center;background-color:rgba(0,0,0,0.7);">
                             <img style="margin-top:-19px;position:relative;top:50%;width:38px;height:38px;"
                                  src="images/spin.svg"/>
                         </div>
+                        <!--Ảnh trong slide-->
                         <div data-u="slides"
                              style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:700px;overflow:hidden;">
                             <div>
+                                <!--Ảnh lớn-->
                                 <img data-u="image" src="images/adidas/114324025/114324025_1.jpg"/>
+                                <!--Ảnh Thumbnail-->
                                 <img data-u="thumb" src="images/adidas/114324025/114324025_1.jpg"/>
                             </div>
                             <div>
+                                <!--Ảnh lớn-->
                                 <img data-u="image" src="images/adidas/114324025/114324025_2.jpg"/>
+                                <!--Ảnh Thumbnail-->
                                 <img data-u="thumb" src="images/adidas/114324025/114324025_2.jpg"/>
                             </div>
                             <div>
+                                <!--Ảnh lớn-->
                                 <img data-u="image" src="images/adidas/114324025/114324025_3.jpg"/>
+                                <!--Ảnh Thumbnail-->
                                 <img data-u="thumb" src="images/adidas/114324025/114324025_3.jpg"/>
                             </div>
                             <div>
+                                <!--Ảnh lớn-->
                                 <img data-u="image" src="images/adidas/114324025/114324025_4.jpg"/>
+                                <!--Ảnh Thumbnail-->
                                 <img data-u="thumb" src="images/adidas/114324025/114324025_4.jpg"/>
                             </div>
                             <div>
+                                <!--Ảnh lớn-->
                                 <img data-u="image" src="images/adidas/114324025/114324025_5.jpg"/>
+                                <!--Ảnh Thumbnail-->
                                 <img data-u="thumb" src="images/adidas/114324025/114324025_5.jpg"/>
                             </div>
                             <div>
+                                <!--Ảnh lớn-->
                                 <img data-u="image" src="images/adidas/114324025/114324025_7.jpg"/>
+                                <!--Ảnh Thumbnail-->
                                 <img data-u="thumb" src="images/adidas/114324025/114324025_7.jpg"/>
                             </div>
 
                         </div>
 
 
-                        <!-- Arrow Navigator -->
+                        <!--  Nút mũi tên điều hướng ảnh trước -->
                         <div data-u="arrowleft" class="jssora106" style="width:55px;height:55px;top:162px;left:30px;"
                              data-scale="0.75">
                             <svg viewbox="0 0 16000 16000"
@@ -299,6 +355,7 @@
                                 <line class="a" x1="10573.9" y1="8000" x2="5426.1" y2="8000"></line>
                             </svg>
                         </div>
+                        <!--  Nút mũi tên điều hướng ảnh sau -->
                         <div data-u="arrowright" class="jssora106" style="width:55px;height:55px;top:162px;right:30px;"
                              data-scale="0.75">
                             <svg viewbox="0 0 16000 16000"
@@ -308,7 +365,7 @@
                                 <line class="a" x1="5426.1" y1="8000" x2="10573.9" y2="8000"></line>
                             </svg>
                         </div>
-                        <!--Thumbnail Navigator-->
+                        <!--Thanh điều hướng Thumbnail dưới ảnh lớn-->
                         <div data-u="thumbnavigator" class=""
                              style="position:absolute;left:0px; bottom:0; width:980px;height:100px;background-color:#000;"
                              data-autocenter="1" data-scale-bottom="0.7">
@@ -326,37 +383,49 @@
                     </div>
 
                     <!-- #endregion Jssor Slider End --></div>
+                <!--Các thuộc tính mô tả sản phẩm-->
                 <div class="col-md-5">
+                    <!--Tên sản phẩm-->
                     <h3 class="product_name">
                         NIKE W AIR MAX 98
                     </h3>
+                    <!--Mã sản phẩm-->
                     <i class="product_number"> Item number: #114324001</i>
+                    <!--Giá sản phẩm-->
                     <h3 class="product_price">139.99 $</h3>
                     <div class="product_detail_title">
                         PRODUCT DETAILS
                     </div>
+                    <!--Thanh ngang-->
                     <hr class="product_detail_bar">
+                    <!--Danh sách các thuộc tính phụ sử dụng thẻ liệt kê ul, li-->
                     <ul class="list-group">
+                        <!--Thương hiệu-->
                         <li class="list-inline-item">
                             <span class="item_title">Brand:</span>
                             Nike
                         </li>
+                        <!--Chất liệu-->
                         <li class="list-inline-item">
                             <span class="item_title">Materials:</span>
                             91.0% Leather, 7.0% Synthetic, 2.0% Textile
                         </li>
+                        <!--Màu sắc-->
                         <li class="list-inline-item">
                             <span class="item_title">Color:</span>
                             BLACK-WHITE-GREY
                         </li>
+                        <!--Mã sản xuất-->
                         <li class="list-inline-item">
                             <span class="item_title">Manufacturer ID:</span>
                             485724-003
                         </li>
+                        <!--Phong cách-->
                         <li class="list-inline-item">
                             <span class="item_title">Style:</span>
                             Class, Retro, Low-Top, Running
                         </li>
+                        <!--Mô tả chi tiết sản phẩm-->
                         <li class="list-inline-item">
                             In the game of basketball Michael Jordan is a god . Number 23 of the Chicago Bulls has set
                             the bar extremely high. His six championship rings, five mvp's numerous scoring title, not
@@ -364,12 +433,13 @@
                                 href="#">more</a>]
                         </li>
                     </ul>
+                    <!--Lựa chọn kích cỡ-->
                     <div class="product_detail_title">
                         CHOOSE A SIZE
                     </div>
+                    <!--Thanh ngang-->
                     <hr class="product_detail_bar">
-
-
+                    <!--Loại kích cỡ-->
                     <ul class="nav nav-tabs" role="tablist">
                         <li class="nav-item product_tab_size">
                             <a class="nav-link active" href="#eur" role="tab" data-toggle="tab">EUR</a>
@@ -381,7 +451,7 @@
                             <a class="nav-link" href="#uk" role="tab" data-toggle="tab">UK</a>
                         </li>
                     </ul>
-
+                    <!--Kích cỡ được liệt kê bằng thẻ ul, li-->
                     <div class="tab-content">
                         <div id="eur" class="tab-pane fade in active show ">
                             <ul class="list-inline">
@@ -421,12 +491,12 @@
                         </div>
                     </div>
 
-
+                    <!--Chọn màu sắc-->
                     <div class="product_detail_title">
                         CHOOSE A COLOR
                     </div>
                     <hr class="product_detail_bar">
-
+                    <!--Danh sách màu sắc-->
                     <div class="product_color filter">
                         <ul class="list-inline">
                             <li class="list-inline-item">
@@ -446,7 +516,7 @@
                             </li>
                         </ul>
                     </div>
-
+                    <!--Các chế đọ và chính sách-->
                     <div class="product_decription">
                         - FAST SHIPPING and EASY RETURNS (4-5Days) <br>
                         - 30 Days return policy <br>
@@ -456,13 +526,16 @@
                         - Service Hotline: +84 123456789 <br>
                     </div>
                     <div class="row">
+                        <!--Nút thêm vào danh sách-->
                         <div class="col-md-6">
                             <a class="btn btn-add-to-wishlist" href="cart.html"><i class="fa fa-heart"></i> ADD TO WISH LIST</a>
                         </div>
+                        <!--Nút thêm vào giỏ hàng-->
                         <div class="col-md-6">
                             <a class="btn btn-add-to-cart" href="cart.html">ADD TO CART</a>
                         </div>
                     </div>
+                    <!--Danh sách nút các mạng xã hội kết nối được liệt kê bằng thẻ ul, li-->
                     <div class="row mt-3">
                         <div class="col-md-12">
                             <ul class="list-inline pull-right">
@@ -476,11 +549,12 @@
                 </div>
 
             </div>
-
+            <!--Review khách hàng-->
             <div class="container review-section">
                 <div class="w-100">
                     <span class="review-title">REVIEWS
                 <span class="total_review">(4)</span>
+                        <!--Danh sách icon ngôi sao-->
                 <div class="review-stars list-inline-item">
                     <ul class="list-inline">
                         <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -494,12 +568,14 @@
                     <a class="pull-right text-gray" href="#">Write you review</a>
                 </div>
                 <hr>
-
+                <!--Danh sách review-->
                 <div class="comments container">
                     <div class="block-comment">
+                        <!--Tên người review-->
                         <div class="comment-title">
                             Jackie Chan!
                         </div>
+                        <!--Số sao-->
                         <div class="review-stars list-inline-item">
                             <ul class="list-inline list-inline-item">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -508,17 +584,21 @@
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                             </ul>
+                            <!--Ngày review-->
                             <span class="list-inline-item">John - June 12, 2018</span>
                         </div>
+                        <!--Nội dung review-->
                         <div class="comment-content">
                             I really love this shoe, very comfortable. It is the most comfortable basketball I've ever
                             worn
                         </div>
                     </div>
                     <div class="block-comment">
+                        <!--Tên người review-->
                         <div class="comment-title">
                             Taylor Swift!
                         </div>
+                        <!--Số sao-->
                         <div class="review-stars list-inline-item">
                             <ul class="list-inline list-inline-item">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -527,17 +607,21 @@
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
                             </ul>
+                            <!--Ngày review-->
                             <span class="list-inline-item">John - June 12, 2018</span>
                         </div>
+                        <!--Nội dung review-->
                         <div class="comment-content">
                             It is the most comfortable basketball I've ever
                             worn
                         </div>
                     </div>
                     <div class="block-comment">
+                        <!--Người review-->
                         <div class="comment-title">
                             Tom Cruise!
                         </div>
+                        <!--Số sao-->
                         <div class="review-stars list-inline-item">
                             <ul class="list-inline list-inline-item">
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
@@ -546,8 +630,10 @@
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                                 <li class="list-inline-item"><i class="fa fa-star"></i></li>
                             </ul>
+                            <!--Ngày review-->
                             <span class="list-inline-item">John - June 12, 2018</span>
                         </div>
+                        <!--Nội dung review-->
                         <div class="comment-content">
                             I really love this shoe, very comfortable.
                         </div>
@@ -611,32 +697,40 @@
                     </div>
                 </div>
             </div>
-
+            <!--Slide sản phẩm gợi ý-->
             <div class="container relate-section mt-5">
                 <div class="w-100">
                     <span class="review-title">YOU MIGHT ALSO LIKE</span>
                 </div>
+                <!--Thanh ngang-->
                 <hr class="underline">
                 <div class="slider-sneaker">
                     <div id="carouselExample" class="carousel slide slide-product" data-ride="carousel" data-interval="9000">
                         <div class="carousel-inner row w-100 m-0" role="listbox">
+                            <!--Ô sản phẩm sử dụng component panel của bootstrap-->
                             <div class="carousel-item  active p-2">
                                 <div class="panel panel-default">
                                     <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
                                         <div title="image 1" class="thumb">
+                                            <!--Ảnh sản phẩm-->
                                             <img class="img-fluid mx-auto d-block" src="images/product-1.jpg" alt="slide 1">
+                                            <!--Nút sale-->
                                             <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
                                             <div class="thumb-content text-uppercase p-2">
+                                                <!--Tên sản phẩm-->
                                                 <div class="tc-title">
                                                     nike
                                                 </div>
+                                                <!--Mô tả sản phẩm-->
                                                 <div class="tc-des">
                                                     nike air vapormax flykinit moc 2
                                                 </div>
                                                 <div class="tc-price">
+                                                    <!--Giá cũ-->
                                         <span class="old-price mr-3">
                                             199$
                                         </span>
+                                                    <!--Giá mới-->
                                                     <span class="new-price">
                                             120$
                                         </span>
@@ -647,22 +741,29 @@
                                 </div>
                             </div>
                             <div class="carousel-item p-2">
+                                <!--Ô sản phẩm sử dụng component panel của bootstrap-->
                                 <div class="panel panel-default">
                                     <a href="product_page.html" class="link_custom"><div class="panel-thumbnail">
                                         <div title="image 1" class="thumb">
+                                            <!--Ảnh sản phẩm-->
                                             <img class="img-fluid mx-auto d-block" src="images/product-2.jpg" alt="slide 1">
+                                            <!--Nút sale sản phẩm-->
                                             <button class="sale-button text-white text-uppercase font-weight-bold">Sale</button>
                                             <div class="thumb-content text-uppercase p-2">
+                                                <!--Tên sản phẩm-->
                                                 <div class="tc-title">
                                                     nike
                                                 </div>
+                                                <!--Mô tả sản phẩm-->
                                                 <div class="tc-des">
                                                     nike air vapormax flykinit moc 2
                                                 </div>
                                                 <div class="tc-price">
+                                                    <!--Giá cũ-->
                                         <span class="old-price mr-3">
                                             199$
                                         </span>
+                                                    <!--Giá mới-->
                                                     <span class="new-price">
                                             120$
                                         </span>
@@ -777,11 +878,13 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Nút xem sản phẩm trước-->
                         <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
                             <i class="fa fa-angle-left"></i>
                             <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
                             <!--<span class="sr-only">Previous</span>-->
                         </a>
+                        <!--Nút xem sản phẩm sau-->
                         <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
                             <i class="fa fa-angle-right"></i>
                             <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
@@ -790,6 +893,7 @@
                     </div>
                 </div>
             </div>
+            <!--Danh sách sản phẩm vừa xem (Cấu trúc giống sản phẩm gợi ý)-->
             <div class=" relate-section mt-5 mb-5">
                 <div class="w-100">
                     <span class="review-title">RECENTLY</span>
@@ -955,11 +1059,13 @@
                                 </div>
                             </div>
                         </div>
+                        <!--Nút xem sản phẩm trước-->
                         <a class="carousel-control-prev" href="#carouselExample2" role="button" data-slide="prev">
                             <i class="fa fa-angle-left"></i>
                             <!--<span class="carousel-control-prev-icon" aria-hidden="true"></span>-->
                             <!--<span class="sr-only">Previous</span>-->
                         </a>
+                        <!--Nút xem sản phẩm sau đó-->
                         <a class="carousel-control-next text-faded" href="#carouselExample2" role="button" data-slide="next">
                             <i class="fa fa-angle-right"></i>
                             <!--<span class="carousel-control-next-icon" aria-hidden="true"></span>-->
@@ -974,9 +1080,10 @@
         </div>
     </div>
 
-
     <footer class="row text-white pt-5 pb-5 m-0 pl-2">
+        <!--Lùi vào 2 cột-->
         <div class="col-2"></div>
+        <!--Cột đầu tiên của footer-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 get help
@@ -1004,6 +1111,7 @@
                 </div>
             </div>
         </div>
+        <!--Cột thứ 2 của footer-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 contact
@@ -1026,6 +1134,7 @@
                 </div>
             </div>
         </div>
+        <!--Cột thứ 3 của footer-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 payment method
@@ -1048,13 +1157,14 @@
                 </div>
             </div>
         </div>
+        <!--Cột thứ 4 của footer. Các icon sử dụng đều được lấy ra từ thư viện font awesome-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 social media
             </div>
             <div class="footer-list">
                 <div class="col-2 text-dark p-0 m-0 list-inline-item">
-                    <a class="fa fa-facebook-f social-item m-auto" href="https://facebook.com"></a>
+                    <a class="fa fa-facebook-f social-item m-auto" href="#"></a>
                 </div>
                 <div class="col-2 text-dark p-0 m-0 list-inline-item">
                     <a class="fa fa-twitter social-item m-auto" href="#"></a>
@@ -1068,13 +1178,17 @@
             </div>
         </div>
         <div class="col-2"></div>
+        <!--Dòng dưới cùng footer-->
         <div class="col-12 row bottom-footer mt-5">
+            <!--Lùi vào 2 cột-->
             <div class="col-2"></div>
+            <!--Dòng chữ Redsneaker-->
             <div class="col-4  pt-3">
                 <span class="text-uppercase">
-                    resneaker @ 2018
+                    redsneaker @ 2018
                 </span>
             </div>
+            <!--Logo dưới footer-->
             <div class="col-6 pl-0">
                 <img src="images/logo-white.png" class="logo-footer">
             </div>
@@ -1084,76 +1198,76 @@
 </body>
 <!--<script src="../js/bootstrap.js"></script>-->
 <script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<script src="js\bootstrap.js"></script>
 <script src="js/jssor.slider-27.4.0.min.js" type="text/javascript"></script>
-<script src="plugins/owl-carousel/owl.carousel.js" type="text/javascript"></script>
+<!--<script src="plugins/owl-carousel/owl.carousel.js" type="text/javascript"></script>-->
 
-<script>
-    $(document).ready(function () {
-        var count_slider = $('#carouselExample .carousel-indicators li').length;
-        $('#carouselExample .carousel-indicators li').attr('style', 'width:' + 100 / count_slider + '%');
+<!--<script>-->
+    <!--$(document).ready(function () {-->
+        <!--var count_slider = $('#carouselExample .carousel-indicators li').length;-->
+        <!--$('#carouselExample .carousel-indicators li').attr('style', 'width:' + 100 / count_slider + '%');-->
 
-        $('#carouselExample').on('slide.bs.carousel', function (e) {
-
-
-            var $e = $(e.relatedTarget);
-            var idx = $e.index();
-            var itemsPerSlide = 5;
-            var totalItems = $('#carouselExample .slide-product .carousel-item').length;
-
-            if (idx >= totalItems - (itemsPerSlide - 1)) {
-                var it = itemsPerSlide - (totalItems - idx);
-                for (var i = 0; i < it; i++) {
-                    // append slides to end
-                    if (e.direction == "left") {
-                        $('#carouselExample .slide-product .carousel-item').eq(i).appendTo('.slide-product .carousel-inner');
-                    }
-                    else {
-                        $('#carouselExample .slide-product .carousel-item').eq(0).appendTo('.slide-product .carousel-inner');
-                    }
-                }
-            }
-        });
+        <!--$('#carouselExample').on('slide.bs.carousel', function (e) {-->
 
 
-        $('#carouselExample').carousel({
-            interval: 3000
-        });
-    });
-</script>
-<script>
-    $(document).ready(function () {
-        var count_slider = $('#carouselExample2 .carousel-indicators li').length;
-        $('#carouselExample2 .carousel-indicators li').attr('style', 'width:' + 100 / count_slider + '%');
+            <!--var $e = $(e.relatedTarget);-->
+            <!--var idx = $e.index();-->
+            <!--var itemsPerSlide = 5;-->
+            <!--var totalItems = $('#carouselExample .slide-product .carousel-item').length;-->
 
-        $('#carouselExample2').on('slide.bs.carousel', function (e) {
-
-
-            var $e = $(e.relatedTarget);
-            var idx = $e.index();
-            var itemsPerSlide = 5;
-            var totalItems = $('#carouselExample2 .slide-product .carousel-item').length;
-
-            if (idx >= totalItems - (itemsPerSlide - 1)) {
-                var it = itemsPerSlide - (totalItems - idx);
-                for (var i = 0; i < it; i++) {
-                    // append slides to end
-                    if (e.direction == "left") {
-                        $('#carouselExample2 .slide-product .carousel-item').eq(i).appendTo('.slide-product .carousel-inner');
-                    }
-                    else {
-                        $('#carouselExample2 .slide-product .carousel-item').eq(0).appendTo('.slide-product .carousel-inner');
-                    }
-                }
-            }
-        });
+            <!--if (idx >= totalItems - (itemsPerSlide - 1)) {-->
+                <!--var it = itemsPerSlide - (totalItems - idx);-->
+                <!--for (var i = 0; i < it; i++) {-->
+                    <!--// append slides to end-->
+                    <!--if (e.direction == "left") {-->
+                        <!--$('#carouselExample .slide-product .carousel-item').eq(i).appendTo('.slide-product .carousel-inner');-->
+                    <!--}-->
+                    <!--else {-->
+                        <!--$('#carouselExample .slide-product .carousel-item').eq(0).appendTo('.slide-product .carousel-inner');-->
+                    <!--}-->
+                <!--}-->
+            <!--}-->
+        <!--});-->
 
 
-        $('#carouselExample2').carousel({
-            interval: 3000
-        });
-    });
-</script>
+        <!--$('#carouselExample').carousel({-->
+            <!--interval: 3000-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
+<!--<script>-->
+    <!--$(document).ready(function () {-->
+        <!--var count_slider = $('#carouselExample2 .carousel-indicators li').length;-->
+        <!--$('#carouselExample2 .carousel-indicators li').attr('style', 'width:' + 100 / count_slider + '%');-->
+
+        <!--$('#carouselExample2').on('slide.bs.carousel', function (e) {-->
+
+
+            <!--var $e = $(e.relatedTarget);-->
+            <!--var idx = $e.index();-->
+            <!--var itemsPerSlide = 5;-->
+            <!--var totalItems = $('#carouselExample2 .slide-product .carousel-item').length;-->
+
+            <!--if (idx >= totalItems - (itemsPerSlide - 1)) {-->
+                <!--var it = itemsPerSlide - (totalItems - idx);-->
+                <!--for (var i = 0; i < it; i++) {-->
+                    <!--// append slides to end-->
+                    <!--if (e.direction == "left") {-->
+                        <!--$('#carouselExample2 .slide-product .carousel-item').eq(i).appendTo('.slide-product .carousel-inner');-->
+                    <!--}-->
+                    <!--else {-->
+                        <!--$('#carouselExample2 .slide-product .carousel-item').eq(0).appendTo('.slide-product .carousel-inner');-->
+                    <!--}-->
+                <!--}-->
+            <!--}-->
+        <!--});-->
+
+
+        <!--$('#carouselExample2').carousel({-->
+            <!--interval: 3000-->
+        <!--});-->
+    <!--});-->
+<!--</script>-->
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
         var animation = [
