@@ -14,68 +14,83 @@
     <div class="container px-0">
         <header class="row text-right text-gray m-0">
             <!--// Row1-->
+            <!--Đây là code dòng đầu tiên dùng để Login/Join và truy cập vào trang giỏ hàng. Khi click vào nút Login hoặc Join sẽ hiện ra form tương ứng (Sử dụng compent modal trong bootstrap)-->
             <div class="container">
+                <!--Cấu trúc được sử dụng ở đây là cấu trúc theo dạng Liệt kê, danh sách sử dụng các thẻ ul, li-->
                 <ul class="list-inline w-100 border-bottom mt-1 mb-0" style="font-size: 12px; line-height: 25px">
                     <li class="list-inline-item pl-2">
-                        <a href="/" data-toggle="modal" data-target="#login_form">Login</a> &nbsp;/&nbsp; <a href="#"
-                                                                                                             data-toggle="modal"
-                                                                                                             data-target="#join_form">Join</a>
+                        <!--Đây là nút Login-->
+                        <a href="/" data-toggle="modal" data-target="#login_form">Login</a> &nbsp;/&nbsp;
+                        <!--Đây là nút Join-->
+                        <a href="#" data-toggle="modal" data-target="#join_form">Join</a>
                     </li>
+                    <!--Đây là nút help-->
                     <li class="list-inline-item pl-2">
-                        <a href="help-page.html">Help</a>
+                        <a href="#">Help</a>
                     </li>
+                    <!--Đây là nút trỏ về trang giỏ hàng-->
                     <li class="list-inline-item pl-2">
                         <a href="cart.html">
                             <i class="fa fa-shopping-cart"></i>
                         </a>
                     </li>
+                    <!--Đây là nút icon địa cầu.-->
                     <li class="list-inline-item pl-2">
                         <a href="">
+                            <!--icon sử dụng thư viện Font Awesome-->
                             <i class="fa fa-globe"></i> <i class="fa fa-angle-down"></i>
                         </a>
                     </li>
                 </ul>
 
             </div>
+            <!--Đây là code menu (sử dụng component Navbar của bootstrap) -->
             <div class="menu w-100" style="height: 30px !important;">
                 <nav class="navbar navbar-expand-lg w-100 h-100">
+                    <!--Đây là nút ảnh logo và điều hướng về trang chủ-->
                     <a class="navbar-brand ml-4" href="trang-chu.html">
                         <img src="images/logo.png" alt="" style="height: 27px;">
                         <span class="logo-text">
                             <span style="color: #eb142a;">RED</span><span style="color: black">SNEAKER.COM</span>
                         </span>
                     </a>
+                    <!--Đây là nút ẩn, hiện menu website được mở ở chế độ mobile-->
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                             aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-
+                    <!--Danh sách các trang được đưa vào menu. Được hiển thị theo dạng danh sách sử dụng thẻ ul, li-->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent" style="font-size: 13px">
                         <ul class="navbar-nav m-auto">
+                            <!--Đây là nút trang chủ (home)-->
                             <li class="nav-item active">
                                 <a class="nav-link" href="trang-chu.html">Home</a>
                             </li>
+                            <!--Đây là nút trang thương hiệu (brand). Sử dụng Component Dropdown để làm menu cấp 2-->
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/brand-page.html" id="navbardrop"
-                                   data-toggle="dropdown">
+                                <a class="nav-link dropdown-toggle" href="brand-page.html" id="navbardrop" data-toggle="dropdown">
                                     Brands
                                 </a>
+                                <!--Đây là danh sách các trang menu cấp 2-->
                                 <div class="dropdown-menu child-menu">
-                                    <a class="dropdown-item" href="/brand-page.html?type_filter=adidas">adidas</a>
-                                    <a class="dropdown-item" href="/brand-page.html?type_filter=nike">nike</a>
-                                    <a class="dropdown-item" href="/brand-page.html?type_filter=converse">converse</a>
+                                    <a class="dropdown-item" href="brand-page.html?type_filter=adidas">adidas</a>
+                                    <a class="dropdown-item" href="brand-page.html?type_filter=nike">nike</a>
+                                    <a class="dropdown-item" href="brand-page.html?type_filter=converse">converse</a>
                                 </div>
                             </li>
+                            <!--Đây là trang New Arrivals. Hiện tại chưa có trang này-->
                             <li class="nav-item">
-                                <a class="nav-link" href="brand-page.html">
+                                <a class="nav-link" href="#">
                                     new arrivals
                                 </a>
                             </li>
+                            <!--Đây là trang sale. Hiện tại chưa có trang này-->
                             <li class="nav-item">
-                                <a class="nav-link" href="brand-page.html">sales</a>
+                                <a class="nav-link" href="#">sales</a>
                             </li>
                         </ul>
+                        <!--Đây là ô tìm kiếm sử dụng thẻ input trong form-->
                         <form class="form-inline my-2 my-lg-0">
                             <button class="btn bg-white border-gray menu-search-button search-form" type="submit"
                                     style="margin-right: -40px; z-index: 2; color: gray"><i class="fa fa-search"></i>
@@ -89,26 +104,31 @@
             <!--// slider news-->
 
         </header>
-        <!-- Modal Login-->
+        <!-- Đây là code của form  Join khi click vào nút Join ở trên. Sử dụng component modal của bootstrap-->
         <div class="modal fade" id="join_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content form-modal">
+                    <!--Đây là phần header của Modal chưa nút đóng (Close) modal-->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    <!--Đây là phần thân của Modal -->
                     <div class="modal-body">
+                        <!--Đây là logo-->
                         <div class="logo" style="text-align: center">
                             <img src="images/logo.png" style="height: 25px" alt="">
                         </div>
                         <br>
+                        <!--Đây là dòng chữ YOUR FOR EVERYTHING FORM RED SNEAKER-->
                         <div class="slogan" style="text-align: center;">
                             YOUR FOR EVERYTHING FORM
                             <br>
                             <span style="color: red">RED</span>SNEAKER
                         </div>
+                        <!--Đây là nút đăng kí bằng facebook-->
                         <button class="btn btn-primary btn-custom mt-4">
                             <div class="pull-left"><i class="fa fa-facebook"></i></div>
                             <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
@@ -116,27 +136,35 @@
                         <fieldset class="text-fieldset">
                             <legend class="text-legend">OR</legend>
                         </fieldset>
+                        <!--Đây là form đăng kí-->
                         <div class="form-section">
                             <form action="#">
+                                <!--Trường nhập Email-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Email">
                                 </div>
+                                <!--Trường nhập Password-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Password">
                                 </div>
+                                <!--Trường nhập lại password-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom"
                                            placeholder="Retype Password">
                                 </div>
+                                <!--Trường nhập Firstname-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="First Name">
                                 </div>
+                                <!--Trường nhập Lastname-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Last Name">
                                 </div>
+                                <!--Trường nhập ngày sinh-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Date of Birth">
                                 </div>
+                                <!--Ô chọn Quốc gia sử dụng thẻ select trong html-->
                                 <div class="form-group">
                                     <select name="" class="form-control form-custom" id="">
                                         <option value="0" selected> - Country -</option>
@@ -145,23 +173,26 @@
                                         <option value="3"> Nhật Bản</option>
                                     </select>
                                 </div>
-
+                                <!--Đây là ô checkbox điều khoản sử dụng-->
                                 <div class="form-group ">
                                     <label class="custom-checkbox">
                                         <input type="checkbox">
                                         <span class="checkmark"></span>
                                         Sign up for emails to hear all latest from Redsneaker.</label>
                                 </div>
+                                Đây là dòng chữ By creating an account,......
                                 <div class="form-group">
                                         <span>By creating an account, you agree to Redsneaker's <a href="help-page.html"
                                                                                                    class="link_custom_modal">Privacy Policy</a> and <a
                                                 href="help-page.html" class="link_custom_modal">Terms of Use</a></span>
                                 </div>
+                                <!--Đây là nút đăng kí - Create Accout-->
                                 <div class="form-group">
                                     <button class="btn btn-submit btn-custom">
                                         CREATE ACCOUNT
                                     </button>
                                 </div>
+                                <!--Đây là câu hỏi Already a member.....-->
                                 <div class="form-group text-center">
                                     Already a member? <a href="#" class="link_custom_modal">Sign in</a>
                                 </div>
@@ -171,57 +202,68 @@
                 </div>
             </div>
         </div>
-        <!-- Modal Login-->
+
+        <!-- Đây là code của form  Login khi click vào nút Login ở trên. Sử dụng component modal của bootstrap-->
         <div class="modal fade" id="login_form" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
              aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content form-modal">
+                    <!--Đây là phần header của Modal chưa nút đóng (Close) modal-->
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
+                    <!--Đây là phần thân (body) của Modal-->
                     <div class="modal-body">
+                        <!--Đây là ảnh logo trong modal-->
                         <div class="logo" style="text-align: center">
                             <img src="images/logo.png" style="height: 25px" alt="">
                         </div>
                         <br>
+                        <!--Đây là dòng chữ YOUR FOR EVERYTHING FORM RED SNEAKER-->
                         <div class="slogan" style="text-align: center;">
                             YOUR FOR EVERYTHING FORM
                             <br>
                             <span style="color: red">RED</span>SNEAKER
                         </div>
-
+                        <!--Đây là form đăng nhập (Login)-->
                         <div class="form-section">
                             <form action="#">
+                                <!--Trường nhập Email-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Email">
                                 </div>
+                                <!--Trường nhập password-->
                                 <div class="form-group">
                                     <input type="text" class="form-control form-custom" placeholder="Password">
                                 </div>
                                 <div class="row form-group">
+                                    <!--Ô checkbox ghi nhớ đăng nhập-->
                                     <div class="col-md-6">
-                                        <label class="custom-checkbox text-left" for="remember">
+                                        <label class="custom-checkbox text-left" for="remember" >
                                             <input type="checkbox" id="remember">
                                             <span class="checkmark"></span>
                                             Keep me logged in
                                         </label>
                                     </div>
+                                    <!--Nút quên mật khẩu-->
                                     <div class="col-md-6">
                                         <a href=""> Forgotten your password?</a>
                                     </div>
                                 </div>
+                                <!--Nút Đăng nhập-->
                                 <div class="form-group">
                                     <button class="btn btn-submit btn-custom">
                                         LOGIN
                                     </button>
                                 </div>
-
+                                <!--Nút đăng kí bằng tài khoản facebook-->
                                 <button class="btn btn-primary btn-custom mt-1">
                                     <div class="pull-left"><i class="fa fa-facebook"></i></div>
                                     <span class="login_with_fb">REGISTER WITH FACEBOOK</span>
                                 </button>
+                                <!--Dòng chữ Already....-->
                                 <div class="form-group text-center mt-2 ">
                                     Already a member? <a href="#" class="link_custom_modal">Sign in</a>
                                 </div>
@@ -231,7 +273,7 @@
                 </div>
             </div>
         </div>
-
+        <!--Đoạn chữ chạy ngang trên phía đầu trang. Sử dụng thẻ marquee của html-->
         <div class="row hot_news m-0">
             <div class="news_content" id="news_content" style="position:relative; overflow: hidden">
                 <marquee class="font-weight-bold">
@@ -248,6 +290,7 @@
 
 
         <div class="row m-0 p-5">
+            <!--Menu bên trái-->
             <div class="col-4 left-wish-list pr-5">
                 <div class="lwl-item col-12 pl-4 pr-5 lwl-item-active">
                     <a href="account-setting.html">Account Setting</a>
@@ -259,8 +302,10 @@
                     <a href="wish-list.html">My wish list</a>
                 </div>
             </div>
+            <!--Form sửa thông tin người dùng-->
             <div class="col-8 account-setting">
                 <form action="#">
+                    <!--Tên người dùng-->
                     <div class="form-group">
                         <h3 class="account-setting-title">
                             HELLO! USER NAME
@@ -269,15 +314,18 @@
                     <div class="form-group">
                         <div class="row">
                             <div class="col-md-4">
+                                <!--Avatar-->
                                 <div class="row mt-2">
                                     <img src="images/avatar.png" alt="" style="margin:0 auto">
 
                                 </div>
+                                <!--Nút sửa Avatar-->
                                 <div class="btn btn-edit-avatar">
                                     Edit
                                 </div>
                             </div>
                             <div class="col-md-8">
+                                <!--Form input chọn tình trạng hôn nhân-->
                                 <div class="form-group">
                                     <label for="">Salutation</label>
                                     <select type="text" class="form-control custom-input">
@@ -286,14 +334,17 @@
                                         <option value="mr">Mss.</option>
                                     </select>
                                 </div>
+                                <!--Sửa tên-->
                                 <div class="form-group">
                                     <label for="">First Name</label>
                                     <input type="text" class="form-control custom-input" placeholder="First User Name">
                                 </div>
+                                <!--Sửa tên-->
                                 <div class="form-group">
                                     <label for="">Last Name</label>
                                     <input type="text" class="form-control custom-input" placeholder="Last User Name">
                                 </div>
+                                <!--Tên hiển thị-->
                                 <div class="form-group">
                                     <label for="">Screen Name</label>
                                     <input type="text" class="form-control custom-input" placeholder="Screen User Name">
@@ -301,7 +352,7 @@
 
                             </div>
                             <div class="col-md-12">
-
+                                <!--Ngày sinh-->
                                 <div class="form-group">
                                     <label for="">Date of Birth</label>
                                     <div>
@@ -373,10 +424,12 @@
                                 </div>
                             </div>
                             <div class="col-md-12">
+                                <!--Email-->
                                 <div class="form-group">
                                     <label for="">Email:</label>
                                     <input type="text" class="form-control custom-input" placeholder="username@email.com">
                                 </div>
+                                <!--Sửa password-->
                                 <div class="form-group">
                                     <label for="">Password:</label>
                                     <div style="position: relative;">
@@ -384,36 +437,44 @@
                                         <input type="button" class="btn btn-edit-password" value="EDIT">
                                     </div>
                                 </div>
+                                <!--Sửa quốc gia-->
                                 <div class="form-group">
                                     <label for=""> Country</label>
                                     <select name="" class="form-control custom-input" id="country" >
                                         <option value="">Viet Nam</option>
                                     </select>
                                 </div>
+                                <!--Sửa đường phố-->
                                 <div class="form-group">
                                     <label for="">Street</label>
                                     <input type="text" class="form-control custom-input">
                                 </div>
+                                <!--Sửa số nhà-->
                                 <div class="form-group">
                                     <label for="">House Number</label>
                                     <input type="text" class="form-control custom-input">
                                 </div>
+                                <!--Sửa địa chỉ-->
                                 <div class="form-group">
                                     <label for="">Additional Address Info</label>
                                     <input type="text" class="form-control custom-input">
                                 </div>
+                                <!--Sửa thành phố-->
                                 <div class="form-group">
                                     <label for="">City</label>
                                     <input type="text" class="form-control custom-input">
                                 </div>
+                                <!--Sửa Zip code-->
                                 <div class="form-group">
                                     <label for="">Zip Code</label>
                                     <input type="text" class="form-control custom-input">
                                 </div>
+                                <!--Sửa số điện thoại-->
                                 <div class="form-group">
                                     <label for="">Telephone</label>
                                     <input type="text" class="form-control custom-input">
                                 </div>
+                                <!--Nút xóa tài khoản-->
                                 <div class="form-group mt-3">
                                     <a href="" class="pull-right" style="color: red">Delete Account</a>
                                 </div>
@@ -427,107 +488,114 @@
         </div>
     </div>
     <footer class="row text-white pt-5 pb-5 m-0 pl-2">
+        <!--Lùi vào 2 cột-->
         <div class="col-2"></div>
+        <!--Cột đầu tiên của footer-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 get help
             </div>
             <div class="footer-list">
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Customer infomation
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Order status/ Returns
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Feedback
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         FAQs
                     </a>
                 </div>
             </div>
         </div>
+        <!--Cột thứ 2 của footer-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 contact
             </div>
             <div class="footer-list">
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Email: info@redsneaker.com
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Hot-line: +84 123456789
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         General terms and conditions
                     </a>
                 </div>
             </div>
         </div>
+        <!--Cột thứ 3 của footer-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 payment method
             </div>
             <div class="footer-list">
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Visa
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Master card
                     </a>
                 </div>
                 <div class="footer-list-item mt-3">
-                    <a href="javascript:" class="text-white">
+                    <a href="#" class="text-white">
                         Paypal
                     </a>
                 </div>
             </div>
         </div>
+        <!--Cột thứ 4 của footer. Các icon sử dụng đều được lấy ra từ thư viện font awesome-->
         <div class="col-2">
             <div class="footer-label text-uppercase">
                 social media
             </div>
             <div class="footer-list">
-                <div class="row">
-                    <div class="col-2 text-dark p-0">
-                        <a class="fa fa-facebook-f social-item m-auto" href="javascript:"></a>
-                    </div>
-                    <div class="col-2 text-dark p-0">
-                        <a class="fa fa-twitter social-item m-auto" href="javascript:"></a>
-                    </div>
-                    <div class="col-2 text-dark p-0">
-                        <a class="fa fa-instagram social-item m-auto" href="javascript:"></a>
-                    </div>
-                    <div class="col-2 text-dark p-0">
-                        <a class="fa fa-google-plus social-item m-auto" href="javascript:"></a>
-                    </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-facebook-f social-item m-auto" href="#"></a>
+                </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-twitter social-item m-auto" href="#"></a>
+                </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-instagram social-item m-auto" href="#"></a>
+                </div>
+                <div class="col-2 text-dark p-0 m-0 list-inline-item">
+                    <a class="fa fa-google-plus social-item m-auto" href="#"></a>
                 </div>
             </div>
         </div>
         <div class="col-2"></div>
+        <!--Dòng dưới cùng footer-->
         <div class="col-12 row bottom-footer mt-5">
+            <!--Lùi vào 2 cột-->
             <div class="col-2"></div>
+            <!--Dòng chữ Redsneaker-->
             <div class="col-4  pt-3">
                 <span class="text-uppercase">
-                    resneaker @ 2018
+                    redsneaker @ 2018
                 </span>
             </div>
+            <!--Logo dưới footer-->
             <div class="col-6 pl-0">
                 <img src="images/logo-white.png" class="logo-footer">
             </div>
